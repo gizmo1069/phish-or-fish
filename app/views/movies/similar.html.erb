@@ -1,11 +1,4 @@
-<!--  This file is app/views/movies/index.html.erb -->
-<h2>All Movies</h2>
-
-<%#  Part 2: Start here... %>
-
-<% if flash[:alert] %>
-  <div><%= flash[:alert] %></div>
-<% end %>
+<h2>Similar Movies</h2>
 
 <table class="table table-striped col-md-12" id="movies">
   <thead>
@@ -18,7 +11,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @movies.each do |movie| %>
+    <% @similar_movies.each do |movie| %>
       <tr>
         <td>
           <%= movie.title %>
@@ -39,4 +32,3 @@
     <% end %>
   </tbody>
 </table>
-<%= link_to 'Add new movie', new_movie_path, :class => 'btn btn-primary' %>

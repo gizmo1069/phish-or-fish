@@ -1,7 +1,9 @@
 Rottenpotatoes::Application.routes.draw do
-  resources :movies
-  # map '/' to be a redirect to '/movies'
-  root :to => redirect('/movies')
+  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
-  match 'movies/:id/similar', to: 'movies#similar', as: 'similar_movies', via: :get
+  resources :scams
+  # map '/' to be a redirect to '/scams'
+  root :to => redirect('/scams')
+
+
 end

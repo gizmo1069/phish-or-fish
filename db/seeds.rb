@@ -1,23 +1,26 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# seeds.rb
 
-movies = [{:title => 'Aladdin', :rating => 'G', :release_date => '25-Nov-1992'},
-    	  {:title => 'The Terminator', :rating => 'R', :release_date => '26-Oct-1984'},
-    	  {:title => 'When Harry Met Sally', :rating => 'R', :release_date => '21-Jul-1989'},
-      	  {:title => 'The Help', :rating => 'PG-13', :release_date => '10-Aug-2011'},
-      	  {:title => 'Chocolat', :rating => 'PG-13', :release_date => '5-Jan-2001'},
-      	  {:title => 'Amelie', :rating => 'R', :release_date => '25-Apr-2001'},
-      	  {:title => '2001: A Space Odyssey', :rating => 'G', :release_date => '6-Apr-1968'},
-      	  {:title => 'The Incredibles', :rating => 'PG', :release_date => '5-Nov-2004'},
-      	  {:title => 'Raiders of the Lost Ark', :rating => 'PG', :release_date => '12-Jun-1981'},
-      	  {:title => 'Chicken Run', :rating => 'G', :release_date => '21-Jun-2000'},
-  	 ]
-
-movies.each do |movie|
-  Movie.create!(movie)
-end
+# Create 5 users
+5.times do |i|
+    User.create!(
+      email: "user#{i + 1}@example.com",
+      password: 'password123',
+      password_confirmation: 'password123'
+    )
+  end
+  
+  # Assuming User model exists and 5 users were created
+  users = User.all
+  
+  # Create 5 scams
+  users.each_with_index do |user, index|
+    Scam.create!(
+      user: user,
+      title: "Scam Title #{index + 1}",
+      description: "Scam Description #{index + 1}",
+      category: "Category #{index + 1}",
+      zipcode: "1000#{index}",
+      url: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/#{133 + index}.png"
+    )
+  end
+  

@@ -1,0 +1,41 @@
+<!--  This file is app/views/scams/index.html.erb -->
+<h2>All Scams</h2>
+
+<%#  Part 2: Start here... %>
+
+<% if flash[:alert] %>
+  <div><%= flash[:alert] %></div>
+<% end %>
+
+<table class="table table-striped col-md-12" id="scams">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Category</th>
+      <th>zipcode</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @scams.each do |scam| %>
+      <tr>
+        <td>
+          <%= scam.title %>
+        </td>
+        <td>
+          <%= scam.category %>
+        </td>
+        <td>
+          <%= scam.zipcode %>
+        </td>
+        <td>
+          <%= scam.description %>
+        </td>
+        <td>
+          <%= link_to "More about #{scam.title}", scam_path(scam) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to 'Add new scam', new_scam_path, :class => 'btn btn-primary' %>

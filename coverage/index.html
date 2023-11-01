@@ -82,7 +82,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#aeadafc01e5982ab2a87745f4c3242bab2c323ad" class="src_link" title="app/controllers/movies_controller.rb">app/controllers/movies_controller.rb</a></td>
+            <td class="strong t-file__name"><a href="#aeadafc01e5982ab2a87745f4c3242bab2c323ad" class="src_link" title="app/controllers/scams_controller.rb">app/controllers/scams_controller.rb</a></td>
             <td class="red strong cell--number t-file__coverage">34.38 %</td>
             <td class="cell--number">57</td>
             <td class="cell--number">32</td>
@@ -104,7 +104,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#d183d9ae7b7491ca149fb290198399af6667055b" class="src_link" title="app/helpers/movies_helper.rb">app/helpers/movies_helper.rb</a></td>
+            <td class="strong t-file__name"><a href="#d183d9ae7b7491ca149fb290198399af6667055b" class="src_link" title="app/helpers/scams_helper.rb">app/helpers/scams_helper.rb</a></td>
             <td class="red strong cell--number t-file__coverage">66.67 %</td>
             <td class="cell--number">6</td>
             <td class="cell--number">3</td>
@@ -115,7 +115,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#45716652d893201c0b4914790c25caa0833be57c" class="src_link" title="app/models/movie.rb">app/models/movie.rb</a></td>
+            <td class="strong t-file__name"><a href="#45716652d893201c0b4914790c25caa0833be57c" class="src_link" title="app/models/scam.rb">app/models/scam.rb</a></td>
             <td class="red strong cell--number t-file__coverage">66.67 %</td>
             <td class="cell--number">5</td>
             <td class="cell--number">3</td>
@@ -196,7 +196,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#aeadafc01e5982ab2a87745f4c3242bab2c323ad" class="src_link" title="app/controllers/movies_controller.rb">app/controllers/movies_controller.rb</a></td>
+            <td class="strong t-file__name"><a href="#aeadafc01e5982ab2a87745f4c3242bab2c323ad" class="src_link" title="app/controllers/scams_controller.rb">app/controllers/scams_controller.rb</a></td>
             <td class="red strong cell--number t-file__coverage">34.38 %</td>
             <td class="cell--number">57</td>
             <td class="cell--number">32</td>
@@ -323,7 +323,7 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#45716652d893201c0b4914790c25caa0833be57c" class="src_link" title="app/models/movie.rb">app/models/movie.rb</a></td>
+            <td class="strong t-file__name"><a href="#45716652d893201c0b4914790c25caa0833be57c" class="src_link" title="app/models/scam.rb">app/models/scam.rb</a></td>
             <td class="red strong cell--number t-file__coverage">66.67 %</td>
             <td class="cell--number">5</td>
             <td class="cell--number">3</td>
@@ -461,7 +461,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#d183d9ae7b7491ca149fb290198399af6667055b" class="src_link" title="app/helpers/movies_helper.rb">app/helpers/movies_helper.rb</a></td>
+            <td class="strong t-file__name"><a href="#d183d9ae7b7491ca149fb290198399af6667055b" class="src_link" title="app/helpers/scams_helper.rb">app/helpers/scams_helper.rb</a></td>
             <td class="red strong cell--number t-file__coverage">66.67 %</td>
             <td class="cell--number">6</td>
             <td class="cell--number">3</td>
@@ -691,7 +691,7 @@
       
         <div class="source_table" id="aeadafc01e5982ab2a87745f4c3242bab2c323ad">
   <div class="header">
-    <h3>app/controllers/movies_controller.rb</h3>
+    <h3>app/controllers/scams_controller.rb</h3>
     <h4>
       <span class="red">
   34.38%
@@ -722,7 +722,7 @@
 
             
 
-            <code class="ruby">class MoviesController &lt; ApplicationController</code>
+            <code class="ruby">class ScamsController &lt; ApplicationController</code>
           </li>
         </div>
       
@@ -755,7 +755,7 @@
 
             
 
-            <code class="ruby">    id = params[:id] # retrieve movie ID from URI route</code>
+            <code class="ruby">    id = params[:id] # retrieve scam ID from URI route</code>
           </li>
         </div>
       
@@ -766,7 +766,7 @@
 
             
 
-            <code class="ruby">    @movie = Movie.find(id) # look up movie by unique ID</code>
+            <code class="ruby">    @scam = Scam.find(id) # look up scam by unique ID</code>
           </li>
         </div>
       
@@ -777,7 +777,7 @@
 
             
 
-            <code class="ruby">    # will render app/views/movies/show.&lt;extension&gt; by default</code>
+            <code class="ruby">    # will render app/views/scams/show.&lt;extension&gt; by default</code>
           </li>
         </div>
       
@@ -821,7 +821,7 @@
 
             
 
-            <code class="ruby">    @movies = Movie.all</code>
+            <code class="ruby">    @scams = Scam.all</code>
           </li>
         </div>
       
@@ -909,7 +909,7 @@
 
             
 
-            <code class="ruby">    @movie = Movie.create!(movie_params)</code>
+            <code class="ruby">    @scam = Scam.create!(scam_params)</code>
           </li>
         </div>
       
@@ -920,7 +920,7 @@
 
             
 
-            <code class="ruby">    flash[:notice] = &quot;#{@movie.title} was successfully created.&quot;</code>
+            <code class="ruby">    flash[:notice] = &quot;#{@scam.title} was successfully created.&quot;</code>
           </li>
         </div>
       
@@ -931,7 +931,7 @@
 
             
 
-            <code class="ruby">    redirect_to movies_path</code>
+            <code class="ruby">    redirect_to scams_path</code>
           </li>
         </div>
       
@@ -975,7 +975,7 @@
 
             
 
-            <code class="ruby">    @movie = Movie.find params[:id]</code>
+            <code class="ruby">    @scam = Scam.find params[:id]</code>
           </li>
         </div>
       
@@ -1019,7 +1019,7 @@
 
             
 
-            <code class="ruby">    @movie = Movie.find params[:id]</code>
+            <code class="ruby">    @scam = Scam.find params[:id]</code>
           </li>
         </div>
       
@@ -1030,7 +1030,7 @@
 
             
 
-            <code class="ruby">    @movie.update_attributes!(movie_params)</code>
+            <code class="ruby">    @scam.update_attributes!(scam_params)</code>
           </li>
         </div>
       
@@ -1041,7 +1041,7 @@
 
             
 
-            <code class="ruby">    flash[:notice] = &quot;#{@movie.title} was successfully updated.&quot;</code>
+            <code class="ruby">    flash[:notice] = &quot;#{@scam.title} was successfully updated.&quot;</code>
           </li>
         </div>
       
@@ -1052,7 +1052,7 @@
 
             
 
-            <code class="ruby">    redirect_to movie_path(@movie)</code>
+            <code class="ruby">    redirect_to scam_path(@scam)</code>
           </li>
         </div>
       
@@ -1096,7 +1096,7 @@
 
             
 
-            <code class="ruby">    @movie = Movie.find(params[:id])</code>
+            <code class="ruby">    @scam = Scam.find(params[:id])</code>
           </li>
         </div>
       
@@ -1107,7 +1107,7 @@
 
             
 
-            <code class="ruby">    @movie.destroy</code>
+            <code class="ruby">    @scam.destroy</code>
           </li>
         </div>
       
@@ -1118,7 +1118,7 @@
 
             
 
-            <code class="ruby">    flash[:notice] = &quot;Movie &#39;#{@movie.title}&#39; deleted.&quot;</code>
+            <code class="ruby">    flash[:notice] = &quot;Scam &#39;#{@scam.title}&#39; deleted.&quot;</code>
           </li>
         </div>
       
@@ -1129,7 +1129,7 @@
 
             
 
-            <code class="ruby">    redirect_to movies_path</code>
+            <code class="ruby">    redirect_to scams_path</code>
           </li>
         </div>
       
@@ -1173,7 +1173,7 @@
 
             
 
-            <code class="ruby">    @movie = Movie.find(params[:id])</code>
+            <code class="ruby">    @scam = Scam.find(params[:id])</code>
           </li>
         </div>
       
@@ -1184,7 +1184,7 @@
 
             
 
-            <code class="ruby">    if @movie.director.present?</code>
+            <code class="ruby">    if @scam.director.present?</code>
           </li>
         </div>
       
@@ -1195,7 +1195,7 @@
 
             
 
-            <code class="ruby">      @similar_movies = Movie.similar_movies(@movie)</code>
+            <code class="ruby">      @similar_scams = Scam.similar_scams(@scam)</code>
           </li>
         </div>
       
@@ -1217,7 +1217,7 @@
 
             
 
-            <code class="ruby">      flash[:alert] = &quot;&#39;#{@movie.title}&#39; has no director info&quot;</code>
+            <code class="ruby">      flash[:alert] = &quot;&#39;#{@scam.title}&#39; has no director info&quot;</code>
           </li>
         </div>
       
@@ -1228,7 +1228,7 @@
 
             
 
-            <code class="ruby">      redirect_to movies_path</code>
+            <code class="ruby">      redirect_to scams_path</code>
           </li>
         </div>
       
@@ -1305,7 +1305,7 @@
 
             
 
-            <code class="ruby">  def movie_params</code>
+            <code class="ruby">  def scam_params</code>
           </li>
         </div>
       
@@ -1316,7 +1316,7 @@
 
             
 
-            <code class="ruby">    params.require(:movie).permit(:title, :rating, :description, :release_date, :director)</code>
+            <code class="ruby">    params.require(:scam).permit(:title, :rating, :description, :release_date, :director)</code>
           </li>
         </div>
       
@@ -1402,7 +1402,7 @@
       
         <div class="source_table" id="d183d9ae7b7491ca149fb290198399af6667055b">
   <div class="header">
-    <h3>app/helpers/movies_helper.rb</h3>
+    <h3>app/helpers/scams_helper.rb</h3>
     <h4>
       <span class="red">
   66.67%
@@ -1433,7 +1433,7 @@
 
             
 
-            <code class="ruby">module MoviesHelper</code>
+            <code class="ruby">module ScamsHelper</code>
           </li>
         </div>
       
@@ -1499,7 +1499,7 @@
       
         <div class="source_table" id="45716652d893201c0b4914790c25caa0833be57c">
   <div class="header">
-    <h3>app/models/movie.rb</h3>
+    <h3>app/models/scam.rb</h3>
     <h4>
       <span class="red">
   66.67%
@@ -1530,7 +1530,7 @@
 
             
 
-            <code class="ruby">class Movie &lt; ActiveRecord::Base</code>
+            <code class="ruby">class Scam &lt; ActiveRecord::Base</code>
           </li>
         </div>
       
@@ -1541,7 +1541,7 @@
 
             
 
-            <code class="ruby">  def self.similar_movies(movie)</code>
+            <code class="ruby">  def self.similar_scams(scam)</code>
           </li>
         </div>
       
@@ -1552,7 +1552,7 @@
 
             
 
-            <code class="ruby">    where(director: movie.director)</code>
+            <code class="ruby">    where(director: scam.director)</code>
           </li>
         </div>
       

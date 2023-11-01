@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+ .google_signin_link {
+    color: white;
+    font-weight: 700;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bold;
+}

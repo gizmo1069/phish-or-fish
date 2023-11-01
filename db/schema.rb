@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20231101001939) do
     t.string   "url"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
+    t.string  "user_id"
   end
 
   add_index "scams", ["user_id"], name: "index_scams_on_user_id"

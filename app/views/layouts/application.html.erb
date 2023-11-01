@@ -13,13 +13,17 @@
     <%# These classes come from the Bootstrap CSS framework. %>
     <nav class="navbar navbar-expand-lg bg-primary text-white mb-3 nav_customize">
       <h1 class="title">Phish Or Fish</h1>
-      <% if current_user %>
-        <span class='bold'>Welcome <%= current_user.email %></span>
-      <% else %>
-        <span>
-          <%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path, class: "google_signin_link" %>
-        </span>
-      <% end %>
+      <div>
+        <% if current_user %>
+          <span class='google_signin_link'>Hi, <%= current_user.email %></span>
+          <span class='mr-4'></span>
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'google_signin_link' %>
+        <% else %>
+          <span>
+            <%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path, class: "google_signin_link" %>
+          </span>
+        <% end %>
+      </div>
       
     </nav>
     <div class="container">

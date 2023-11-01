@@ -19,6 +19,11 @@
     font-weight: 700;
 }
 
+.google_signin_link:hover {
+  color: #56d886;
+  font-weight: 700;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -28,3 +33,44 @@
 .bold {
   font-weight: bold;
 }
+
+h2 {
+  margin: 64px 0 32px;
+}
+
+h3 {
+  margin: 24px 0 16px;
+}
+
+.mg_8 {
+  margin: 8px 0;
+}
+
+.mg_16 {
+  margin: 16px 0;
+}
+
+.nav_customize {
+  background-color: black !important;
+  color: #56d886 !important;
+  padding: 16px 32px !important;
+}
+
+.a_customize {
+  color: #45ad6b;
+}
+
+.a_customize:hover {
+  color: #3c975e;
+}
+
+.btn-primary {
+  background-color: #45ad6b;
+  border-color: transparent;
+}
+
+.btn-primary:hover {
+  background-color: #3c975e;
+  border-color: transparent;
+}
+

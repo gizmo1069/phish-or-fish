@@ -2306,3 +2306,1129 @@ Processing by ScamsController#index as HTML
   [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 16]]
   Rendered layouts/_flash.erb (0.0ms)
 Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 01:03:38 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 16]]
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 01:03:40 -0400
+Processing by ScamsController#index as HTML
+  [1m[35mScam Load (0.2ms)[0m  SELECT "scams".* FROM "scams"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (11, 12, 13, 14, 15)[0m
+  Rendered scams/index.html.erb within layouts/application (3.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 16]]
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 01:05:18 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (11.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 16]]
+  Rendered layouts/_flash.erb (0.4ms)
+Completed 200 OK in 51ms (Views: 46.5ms | ActiveRecord: 0.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user1@realmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "user1@realmail.com"], ["encrypted_password", "$2a$12$nI/lkbYS44ZjbobNZ3ea7Oa8emMBw2Fn.U6Y/tR8I2ha6d1jX3aUy"], ["created_at", "2023-11-01 05:18:57.714613"], ["updated_at", "2023-11-01 05:18:57.714613"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Scam Report 1: Email Scam"], ["description", "Received a call saying I won a prize and needed to provide credit card info to claim."], ["category", "social media"], ["zipcode", "10000"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png"], ["user_id", 17], ["created_at", "2023-11-01 05:18:57.725939"], ["updated_at", "2023-11-01 05:18:57.725939"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'user2@realmail.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "user2@realmail.com"], ["encrypted_password", "$2a$12$aJ.xRIkiOSZixTkIIRsEIuucEo.TVbc34cNKs64pz8BM4TdJ9NHAG"], ["created_at", "2023-11-01 05:18:57.935681"], ["updated_at", "2023-11-01 05:18:57.935681"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Scam Report 2: Social media Scam"], ["description", "An email claiming to be from a bank, asking to click on a suspicious link to verify the account."], ["category", "email"], ["zipcode", "10001"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/134.png"], ["user_id", 18], ["created_at", "2023-11-01 05:18:57.939552"], ["updated_at", "2023-11-01 05:18:57.939552"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user3@realmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "user3@realmail.com"], ["encrypted_password", "$2a$12$PL8v5ZpdCGnGOEloa1Hcv..0zXqgyckp2.wnWVbW.95uEIXuRSmqK"], ["created_at", "2023-11-01 05:18:58.154828"], ["updated_at", "2023-11-01 05:18:58.154828"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Scam Report 3: Social media Scam"], ["description", "A message on social media from an unknown profile promising easy money with a small investment."], ["category", "phone"], ["zipcode", "10002"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/135.png"], ["user_id", 19], ["created_at", "2023-11-01 05:18:58.157736"], ["updated_at", "2023-11-01 05:18:58.157736"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'user4@realmail.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "user4@realmail.com"], ["encrypted_password", "$2a$12$.KWRUUIAU9sNoX2RJXl8MuiPm0fHF0js9yYZtoGnyK/1SAMehlhwu"], ["created_at", "2023-11-01 05:18:58.368681"], ["updated_at", "2023-11-01 05:18:58.368681"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Scam Report 4: Phone Scam"], ["description", "Phone call from 'IRS' claiming there's a lawsuit against me and demanding immediate payment."], ["category", "phone"], ["zipcode", "10003"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/136.png"], ["user_id", 20], ["created_at", "2023-11-01 05:18:58.372735"], ["updated_at", "2023-11-01 05:18:58.372735"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user5@realmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "user5@realmail.com"], ["encrypted_password", "$2a$12$jh2ruCYG.35o7KQmSJwl0eWjwOkOw1kb3X7SrGDrkxwsMZDmyVDhq"], ["created_at", "2023-11-01 05:18:58.591450"], ["updated_at", "2023-11-01 05:18:58.591450"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Scam Report 5: Social media Scam"], ["description", "Email received with an attachment, claiming to be an invoice for a service I never used."], ["category", "email"], ["zipcode", "10004"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/137.png"], ["user_id", 21], ["created_at", "2023-11-01 05:18:58.594253"], ["updated_at", "2023-11-01 05:18:58.594253"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+
+
+Started GET "/scams" for ::1 at 2023-11-01 01:20:26 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (1.5ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (11, 12, 13, 14, 15, 17, 18, 19, 20, 21)
+  Rendered scams/index.html.erb within layouts/application (36.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 16]]
+  Rendered layouts/_flash.erb (0.5ms)
+Completed 200 OK in 247ms (Views: 239.6ms | ActiveRecord: 2.4ms)
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 12]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 13]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 14]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 15]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 16]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 17]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 18]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 19]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 20]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 21]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "scams" WHERE "scams"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "scams" WHERE "scams"."id" = ?  [["id", 2]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "scams" WHERE "scams"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM "scams" WHERE "scams"."id" = ?  [["id", 4]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "scams" WHERE "scams"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "scams" WHERE "scams"."id" = ?  [["id", 6]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "scams" WHERE "scams"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "scams" WHERE "scams"."id" = ?  [["id", 8]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "scams" WHERE "scams"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "scams" WHERE "scams"."id" = ?  [["id", 10]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user1@realmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "user1@realmail.com"], ["encrypted_password", "$2a$12$UdZPdVMHzvs3LjlUrkKXbOseZ/fLYf2.2N.YR6k9uU7rlr6rVVUy."], ["created_at", "2023-11-01 05:22:19.051566"], ["updated_at", "2023-11-01 05:22:19.051566"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Scam Report 1: Email Scam"], ["description", "Received a call saying I won a prize and needed to provide credit card info to claim."], ["category", "phone"], ["zipcode", "10000"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png"], ["user_id", 22], ["created_at", "2023-11-01 05:22:19.061589"], ["updated_at", "2023-11-01 05:22:19.061589"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'user2@realmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "user2@realmail.com"], ["encrypted_password", "$2a$12$6PlPIKuyxhHRv0btm9gqs.UyJKPGsEOS4xOJ8zievhjIBsWr0JQCa"], ["created_at", "2023-11-01 05:22:19.268929"], ["updated_at", "2023-11-01 05:22:19.268929"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Scam Report 2: Social media Scam"], ["description", "An email claiming to be from a bank, asking to click on a suspicious link to verify the account."], ["category", "phone"], ["zipcode", "10001"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/134.png"], ["user_id", 23], ["created_at", "2023-11-01 05:22:19.271910"], ["updated_at", "2023-11-01 05:22:19.271910"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user3@realmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "user3@realmail.com"], ["encrypted_password", "$2a$12$95Ti3cpjDUvvJ/a5CdSWoeGZvXVEeXOVNZTGFD4wo7bjjkpzkoC4K"], ["created_at", "2023-11-01 05:22:19.478720"], ["updated_at", "2023-11-01 05:22:19.478720"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Scam Report 3: Social media Scam"], ["description", "A message on social media from an unknown profile promising easy money with a small investment."], ["category", "phone"], ["zipcode", "10002"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/135.png"], ["user_id", 24], ["created_at", "2023-11-01 05:22:19.481688"], ["updated_at", "2023-11-01 05:22:19.481688"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'user4@realmail.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "user4@realmail.com"], ["encrypted_password", "$2a$12$eidj.5gD.PT0YU5KL.AtAe001zzX21UoAp6MwuOZ4Chxkjr7w2bHG"], ["created_at", "2023-11-01 05:22:19.686364"], ["updated_at", "2023-11-01 05:22:19.686364"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Scam Report 4: Email Scam"], ["description", "Phone call from 'IRS' claiming there's a lawsuit against me and demanding immediate payment."], ["category", "email"], ["zipcode", "10003"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/136.png"], ["user_id", 25], ["created_at", "2023-11-01 05:22:19.689476"], ["updated_at", "2023-11-01 05:22:19.689476"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user5@realmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "user5@realmail.com"], ["encrypted_password", "$2a$12$lyo.aedIF76YVfhnGCE4zuucV/4cgRysNRZAP0ofClcRQDN4qBO72"], ["created_at", "2023-11-01 05:22:19.896072"], ["updated_at", "2023-11-01 05:22:19.896072"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Scam Report 5: Email Scam"], ["description", "Email received with an attachment, claiming to be an invoice for a service I never used."], ["category", "social media"], ["zipcode", "10004"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/137.png"], ["user_id", 26], ["created_at", "2023-11-01 05:22:19.899054"], ["updated_at", "2023-11-01 05:22:19.899054"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2023-11-01 01:22:28 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 01:22:28 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (1.5ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (32.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 16]]
+  Rendered layouts/_flash.erb (1.0ms)
+Completed 200 OK in 233ms (Views: 226.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:24:41 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mScam Load (0.2ms)[0m  SELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    22: </p>
+    23: 
+    24: <div class="row">
+    25:   <% if @scam.user.email == current_user.email %>
+    26:     <%= link_to 'Edit', edit_scam_path(@scam), :class => 'btn btn-primary col-2' %>
+    27:     <%= link_to 'Delete', scam_path(@scam), 'data-method' => 'delete', 'data-confirm' => 'Are you sure?', :class => 'btn btn-danger col-2' %>
+    28:   <% end %>
+  app/views/scams/show.html.erb:25:in `_app_views_scams_show_html_erb___209196325629359411_70276938127280'
+
+
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.8ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:31:32 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mScam Load (0.8ms)[0m  SELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_flash.erb (0.3ms)
+Completed 200 OK in 47ms (Views: 36.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:37:24 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mScam Load (0.2ms)[0m  SELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered scams/show.html.erb within layouts/application (41.3ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined local variable or method `scam' for #<#<Class:0x00007fd544bc2ed0>:0x00007fd544bd3d98>
+Did you mean?  @scam):
+    13:   <tbody>
+    14:       <tr>
+    15:         <td>
+    16:           <%= scam.title %>
+    17:         </td>
+    18:         <td>
+    19:           <%= scam.category %>
+  app/views/scams/show.html.erb:16:in `_app_views_scams_show_html_erb___209196325629359411_70276979004940'
+
+
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.0ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:37:41 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:37:52 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:38:24 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e046f1eabf0dda9dc6fdc354dec652aa7521beb51d821ef7190d5ef1e1a95af7.css?body=1" for ::1 at 2023-11-01 01:38:24 -0400
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:38:29 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-a625a68063fb1d477bd86838c7c9a8c3dea4bb4d2ea5563f50b3104cb22277d9.css?body=1" for ::1 at 2023-11-01 01:38:30 -0400
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:38:35 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-c269237154fb17316849895fcd11383a9e194ce5db8d10db8d95aa8e1114687d.css?body=1" for ::1 at 2023-11-01 01:38:35 -0400
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:41:29 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:41:58 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-7935d328a028ebbc8c9cb2790f6cc3e76fea40bc70e92e42b4cbe7497507ed2d.css?body=1" for ::1 at 2023-11-01 01:41:58 -0400
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:42:08 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-05e0d086c198216793dcbf5ccd443cb83b1f27fc0c1112734e3d6e45cdaca2ca.css?body=1" for ::1 at 2023-11-01 01:42:08 -0400
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:43:15 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:44:05 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.6ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:45:06 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.6ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:46:13 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-2f13440f19c95ddeb3e27bbd23395b9caf5d29fc4fd4b5973394d4aa7b6d1711.css?body=1" for ::1 at 2023-11-01 01:46:13 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 01:48:11 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 01:48:35 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 01:48:54 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (138.0ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 148ms (Views: 147.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 01:49:28 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 01:50:09 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.6ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:50:59 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 01:51:06 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 01:52:18 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 01:52:23 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 01:52:37 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 01:52:43 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 01:54:48 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (wrong number of arguments (given 4, expected 2..3)):
+     6:   <%= label :scam, :category, 'Category', :class => 'col-form-label'  %>
+     7:   <%= select :scam, :category, ['phone','email','social media'], {}, {:class => 'form-control col-1'} %>
+     8:   <%= label :scam, :zipcode, 'Zipcode', :class => 'col-form-label'  %>
+     9:   <%= text_field :scam, :zipcode, {}, :class => 'form-control col-2 d-inline' %>
+    10:   <br/>
+    11:   <div class='mg_16'>
+    12:     <%= submit_tag 'Save Changes', :class => 'btn btn-primary' %>
+  app/views/scams/new.html.erb:9:in `block in _app_views_scams_new_html_erb___1719539755462663534_70276966196000'
+  app/views/scams/new.html.erb:3:in `_app_views_scams_new_html_erb___1719539755462663534_70276966196000'
+
+
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.4ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 01:55:13 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 01:55:58 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 02:01:39 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 02:25:43 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_flash.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-287e2e3f0b3f5d92f91d5fbdca83138c8c8491bfca245aa994cfbafbde63c032.css?body=1" for ::1 at 2023-11-01 02:25:43 -0400
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 02:26:05 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 02:26:15 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:26:21 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (1.1ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:27:08 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (1.9ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 23.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.self-e58bb9b116b7d243a925b92c80cdf403e91071237cf433bcaafe12cb7cb0b821.css?body=1" for ::1 at 2023-11-01 02:27:08 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:35:24 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.9ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (44.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 112ms (Views: 102.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-3626cb5883982e7a24a6cbb924fcba7aca705c7bce943819415275f2eb76add6.css?body=1" for ::1 at 2023-11-01 02:35:25 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:35:44 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-488f2139c6a7548a07918ee281641e744a929939143eceece739c872c4f80f31.css?body=1" for ::1 at 2023-11-01 02:35:44 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:36:04 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-b5ba3aec86ec6f7843a607e9c3e569b2e629337688ce29f1b1db248fbbc4f64e.css?body=1" for ::1 at 2023-11-01 02:36:04 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:36:34 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:37:38 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-a2c2192df7c812de3bc08718d663098d786728b494b345305972c0a8e44fde7c.css?body=1" for ::1 at 2023-11-01 02:37:39 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:37:54 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-486183985a4dfbc13137a01d1a2823a2f9c17667997a2f737e710239e3762016.css?body=1" for ::1 at 2023-11-01 02:37:54 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:39:09 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-31b0ac5cb494c92b513b0074cf9b4a5d2b96887ffcbcb630d14a83f54b9813b9.css?body=1" for ::1 at 2023-11-01 02:39:09 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:39:16 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-9477be1a4c6115e0462796cf52dc8fef9704fcfd33a8aa925305f1b90862221e.css?body=1" for ::1 at 2023-11-01 02:39:16 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:40:12 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-03c31abd75833b988f123440198cb79501b4efaa429791303f16e6676354e365.css?body=1" for ::1 at 2023-11-01 02:40:12 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:40:34 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-51441cbe5f85f6bd4bc14d135f337343cdfcb38914ee38c7d982f0f3c62fabb6.css?body=1" for ::1 at 2023-11-01 02:40:34 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:41:31 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-bbca40a21e7c8cd3de382514142e2a98765be08920708b67a813e277cc6e7da6.css?body=1" for ::1 at 2023-11-01 02:41:31 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:41:35 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-bacde6c8f9fa9e2298a7bd4c3a42d8075419c1190a49fdfec8d2b3c2fbdfe396.css?body=1" for ::1 at 2023-11-01 02:41:35 -0400
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 02:42:22 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:42:27 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:43:36 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (1.5ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 58ms (Views: 52.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.self-f6404e6b1fd831a20ebae472dbc940fb9d821c961cd3592181370b515a932886.css?body=1" for ::1 at 2023-11-01 02:43:36 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:44:00 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-275b80899e3c339cc3f12a797a63be3bd7e7a66f043f6c9dd2c7ef296fdc97e7.css?body=1" for ::1 at 2023-11-01 02:44:00 -0400
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 02:44:06 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:44:08 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 02:44:09 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:44:11 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 02:44:13 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:44:14 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:44:30 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.4ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-32e13c99fb88ece8b79b1c536b773c1a72766c63cab12d12ec488c651001cf57.css?body=1" for ::1 at 2023-11-01 02:44:30 -0400
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 02:44:31 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:44:34 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 02:45:06 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 80ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:45:07 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 02:45:15 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:45:17 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:48:22 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-696ecb2e1fae7d0853b8dd4c1f1776580f6e05dc6427606935115e657bb6ffa4.css?body=1" for ::1 at 2023-11-01 02:48:22 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:48:52 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-ba1bfe6274bd2c6a6bfe6c5f3e65439390fa803f96706fe2e8226155e0b79dae.css?body=1" for ::1 at 2023-11-01 02:48:52 -0400
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:58:06 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.9ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (19.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 61ms (Views: 56.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-e0d2d94adf42a0eb96a02b10c9a930deb2409f7f074ad7b9759de37aeecc7911.css?body=1" for ::1 at 2023-11-01 02:58:06 -0400
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 02:58:13 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 02:58:15 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 03:02:36 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 03:03:00 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 03:03:06 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.4ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 03:03:22 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/scams/11" for ::1 at 2023-11-01 03:04:10 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered scams/show.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 03:04:12 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 03:04:14 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 03:04:20 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 03:04:51 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/scams" for ::1 at 2023-11-01 03:06:06 -0400
+Processing by ScamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q4NB4RnN2LQCDBhNpn2kx52beuN1LPljG3bXsV+Hr/r4CnZMSrM0AwOqTDFzQQP3MWi2215kGowAY62Ie94Feg==", "scam"=>{"title"=>"Fake pikachu", "category"=>"social media", "zipcode"=>"Mimikyu pretends to be a Pikachu."}, "commit"=>"Save Changes"}
+Unpermitted parameters: category, zipcode
+  [1m[36m (1.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "scams" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "Fake pikachu"], ["created_at", "2023-11-01 07:06:07.036373"], ["updated_at", "2023-11-01 07:06:07.036373"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/scams
+Completed 302 Found in 90ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 03:06:07 -0400
+Processing by ScamsController#index as HTML
+  [1m[35mScam Load (0.2ms)[0m  SELECT "scams".* FROM "scams"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)[0m
+  Rendered scams/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scams/16" for ::1 at 2023-11-01 03:06:16 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mScam Load (0.1ms)[0m  SELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1  [["id", 16]]
+  Rendered scams/show.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    22:           <%= @scam.zipcode %>
+    23:         </td>
+    24:         <td>
+    25:           <%= @scam.user.email %>
+    26:         </td>
+    27:       </tr>
+    28:   </tbody>
+  app/views/scams/show.html.erb:25:in `_app_views_scams_show_html_erb___209196325629359411_70276993917500'
+
+
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/lizhuoxuan/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.1ms)
+
+
+Started GET "/scams/16" for ::1 at 2023-11-01 03:08:18 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 16]]
+  Rendered scams/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scams/16" for ::1 at 2023-11-01 03:11:29 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mScam Load (0.3ms)[0m  SELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1  [["id", 16]]
+  Rendered scams/show.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 36ms (Views: 23.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 03:11:31 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-01 03:11:35 -0400
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/scams" for ::1 at 2023-11-01 03:11:53 -0400
+Processing by ScamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LskpPvmB7mbi/vmA/TAzVTz+8lJO0bsiqkVUPfxRNGp9QB6Tqv8C0eNYrfwoDJRlkA0+amWZWM2xUC4E2Aie6g==", "scam"=>{"title"=>"Fake pikachu", "category"=>"social media", "zipcode"=>"10027", "description"=>"Mimikyu pretends to be a Pikachu."}, "commit"=>"Save Changes"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "scams" ("title", "category", "zipcode", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Fake pikachu"], ["category", "social media"], ["zipcode", "10027"], ["description", "Mimikyu pretends to be a Pikachu."], ["created_at", "2023-11-01 07:11:53.056383"], ["updated_at", "2023-11-01 07:11:53.056383"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/scams
+Completed 302 Found in 7ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 03:11:53 -0400
+Processing by ScamsController#index as HTML
+  [1m[35mScam Load (0.2ms)[0m  SELECT "scams".* FROM "scams"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)[0m
+  Rendered scams/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scams/17" for ::1 at 2023-11-01 03:12:16 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mScam Load (0.6ms)[0m  SELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered scams/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 03:15:14 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 80ms (Views: 79.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scams/12" for ::1 at 2023-11-01 03:15:16 -0400
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 23]]
+  Rendered scams/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-01 03:15:20 -0400
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (22, 23, 24, 25, 26)
+  Rendered scams/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.4ms)

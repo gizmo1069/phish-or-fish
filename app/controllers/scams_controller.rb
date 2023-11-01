@@ -38,20 +38,10 @@ class ScamsController < ApplicationController
     redirect_to scams_path
   end
 
-  def similar
-    @scam = Scam.find(params[:id])
-    if @scam.director.present?
-      @similar_scams = Scam.similar_scams(@scam)
-    else
-      flash[:alert] = "'#{@scam.title}' has no director info"
-      redirect_to scams_path
-    end
-  end
-
   private
   # Making "internal" methods private is not required, but is a common practice.
   # This helps make clear which methods respond to requests, and which ones do not.
   def scam_params
-    params.require(:scam).permit(:title, :rating, :description, :release_date, :director)
+    params.require(:scam).permit(:title, :category, :zipcode, :description)
   end
 end

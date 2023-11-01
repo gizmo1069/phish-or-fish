@@ -32,10 +32,10 @@
           <%= scam.description %>
         </td>
         <td>
-          <%= link_to "More about #{scam.title}", scam_path(scam) %>
+          <%= link_to "Detail", scam_path(scam), :class => 'a_customize' %>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
-<%= link_to 'Add new scam', new_scam_path, :class => 'btn btn-primary' %>
+<%= link_to 'Add new scam', new_scam_path, :class => 'btn btn-primary mg_16' %>

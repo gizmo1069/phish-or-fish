@@ -11,32 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20231101001939) do
+ActiveRecord::Schema.define(version: 20231101231406) do
 
   create_table "scams", force: :cascade do |t|
-    t.string   "title"
-    t.text     "description"
-    t.string   "category"
-    t.string   "zipcode"
-    t.string   "url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string  "user_id"
+    t.string "title"
+    t.text   "description"
+    t.string "category"
+    t.string "zipcode"
+    t.string "url"
+    t.string "user"
   end
-
-  add_index "scams", ["user_id"], name: "index_scams_on_user_id"
-
-  create_table "users", force: :cascade do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
-  end
-
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end

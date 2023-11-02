@@ -1,3 +1,15 @@
+require 'rspec/mocks/standalone'
+World(RSpec::Mocks::ExampleMethods)
+
+Before do
+  RSpec::Mocks.setup
+end
+
+After do
+  RSpec::Mocks.verify
+  RSpec::Mocks.teardown
+end
+
 require 'simplecov'
 SimpleCov.start 'rails'
 
@@ -8,6 +20,11 @@ SimpleCov.start 'rails'
 # files.
 
 require 'cucumber/rails'
+
+include Warden::Test::Helpers
+Warden.test_mode!
+
+OmniAuth.config.test_mode = true
 
 # Capybara defaults to CSS3 selectors rather than XPath.
 # If you'd prefer to use XPath, just uncomment this line and adjust any
@@ -58,4 +75,7 @@ end
 # The :transaction strategy is faster, but might give you threading problems.
 # See https://github.com/cucumber/cucumber-rails/blob/master/features/choose_javascript_database_strategy.feature
 Cucumber::Rails::Database.javascript_strategy = :truncation
+
+
+
 

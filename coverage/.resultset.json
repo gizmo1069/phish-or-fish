@@ -1,16 +1,14 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/codio/workspace/hw-acceptance-unit-test-cycle/rottenpotatoes/app/models/movie.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/models/scam.rb": {
         "lines": [
-          1,
-          1,
           1,
           null,
           null
         ]
       },
-      "/home/codio/workspace/hw-acceptance-unit-test-cycle/rottenpotatoes/app/controllers/movies_controller.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/controllers/scams_controller.rb": {
         "lines": [
           1,
           null,
@@ -21,103 +19,88 @@
           null,
           null,
           1,
-          1,
+          8,
           null,
           null,
           1,
           null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
           null,
           null,
           1,
           2,
           2,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
+          2,
           null,
           null,
           1,
           1,
           null,
-          null
-        ]
-      },
-      "/home/codio/workspace/hw-acceptance-unit-test-cycle/rottenpotatoes/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null,
-          null,
-          1,
-          null
-        ]
-      },
-      "/home/codio/workspace/hw-acceptance-unit-test-cycle/rottenpotatoes/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/home/codio/workspace/hw-acceptance-unit-test-cycle/rottenpotatoes/app/helpers/movies_helper.rb": {
-        "lines": [
-          1,
           null,
           1,
           0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/helpers/scams_helper.rb": {
+        "lines": [
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1698189032
+    "timestamp": 1698883664
   },
   "RSpec": {
     "coverage": {
-      "/home/codio/workspace/hw-acceptance-unit-test-cycle/rottenpotatoes/app/helpers/application_helper.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/codio/workspace/hw-acceptance-unit-test-cycle/rottenpotatoes/app/helpers/movies_helper.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/helpers/scams_helper.rb": {
         "lines": [
           1,
-          null,
-          1,
-          0,
           null,
           null
         ]
       },
-      "/home/codio/workspace/hw-acceptance-unit-test-cycle/rottenpotatoes/app/controllers/movies_controller.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/controllers/scams_controller.rb": {
         "lines": [
           1,
           null,
@@ -136,9 +119,9 @@
           null,
           null,
           1,
-          0,
-          0,
-          0,
+          2,
+          2,
+          2,
           null,
           null,
           1,
@@ -146,57 +129,46 @@
           null,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
+          2,
+          2,
+          2,
+          2,
           null,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
+          2,
+          2,
+          2,
+          2,
           null,
           null,
           1,
           null,
           null,
           1,
-          0,
+          4,
           null,
           null
         ]
       },
-      "/home/codio/workspace/hw-acceptance-unit-test-cycle/rottenpotatoes/app/controllers/application_controller.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
           null,
           1,
+          null,
           null
         ]
       },
-      "/home/codio/workspace/hw-acceptance-unit-test-cycle/rottenpotatoes/app/models/movie.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/models/scam.rb": {
         "lines": [
           1,
-          1,
-          0,
           null,
           null
         ]
       }
     },
-    "timestamp": 1698194007
+    "timestamp": 1698883672
   }
 }

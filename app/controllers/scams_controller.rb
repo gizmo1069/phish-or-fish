@@ -7,7 +7,7 @@ class ScamsController < ApplicationController
   end
 
   def index
-    @scams = Scam.includes(:user).all
+    @scams = Scam.all
   end
 
   def new
@@ -15,7 +15,7 @@ class ScamsController < ApplicationController
   end
 
   def create
-    @scam = Scam.create!(scam_params.merge(user_id: current_user.id))
+    @scam = Scam.create!(scam_params)
     flash[:notice] = "#{@scam.title} was successfully created."
     redirect_to scams_path
   end

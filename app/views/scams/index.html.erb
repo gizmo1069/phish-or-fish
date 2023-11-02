@@ -32,14 +32,11 @@
           <%= scam.description %>
         </td>
         <td>
-          <%= link_to "Detail", scam_path(scam), :class => 'a_customize' %>
+          <%= link_to "Details for #{scam.title}", scam_path(scam), :class => 'a_customize' %>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
-<% if current_user %>
-  <%= link_to 'Post new scam', new_scam_path, :class => 'btn btn-primary mg_16' %>
-<% else %>
-  <span class='btn btn-primary mg_16'>Login to post new scam</span>
-<% end %>
+<%= link_to 'Post new scam', new_scam_path, :class => 'btn btn-primary mg_16' %>
+

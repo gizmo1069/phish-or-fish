@@ -2,10 +2,6 @@
 
 # Create 5 users
 5.times do |i|
-  user = User.create!(
-    email: "user#{i + 1}@realmail.com",
-    password: "securepass#{i + 1}"
-  )
 
   # For each user, create a scam with randomized categories and more realistic descriptions
   categories = ['phone', 'email', 'social media']
@@ -23,6 +19,5 @@
     category: categories.sample,
     zipcode: "#{10000 + i}",
     url: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/#{133 + i}.png",
-    user_id: user.id
   )
 end

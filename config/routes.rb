@@ -1,5 +1,4 @@
-Rottenpotatoes::Application.routes.draw do
-  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+Phishorfish::Application.routes.draw do
 
   resources :scams
   # map '/' to be a redirect to '/scams'

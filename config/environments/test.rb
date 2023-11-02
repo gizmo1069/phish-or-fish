@@ -1,4 +1,4 @@
-Rottenpotatoes::Application.configure do
+Phishorfish::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # The test environment is used exclusively to run your application's
@@ -20,6 +20,12 @@ Rottenpotatoes::Application.configure do
 
   # Raise exceptions instead of rendering exception templates
   config.action_dispatch.show_exceptions = false
+
+  config.action_dispatch.default_headers = {
+    'rack.session' => Rack::Test::DEFAULT_HOST
+  }
+
+  config.session_store :cookie_store, key: '_your_app_session'
 
   # Disable request forgery protection in test environment
   config.action_controller.allow_forgery_protection    = false

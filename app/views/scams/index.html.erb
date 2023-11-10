@@ -38,5 +38,7 @@
     <% end %>
   </tbody>
 </table>
-<%= link_to 'Post new scam', new_scam_path, :class => 'btn btn-primary mg_16' %>
+<% if current_user %>
+  <%= link_to 'Post new scam', new_scam_path, :class => 'btn btn-primary mg_16' %>
+<% end %>
 

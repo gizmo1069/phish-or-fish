@@ -1,10 +1,22 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/models/scam.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/models/user.rb": {
         "lines": [
           1,
           null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/models/scam.rb": {
+        "lines": [
+          1,
+          1,
           null
         ]
       },
@@ -27,9 +39,9 @@
           null,
           null,
           1,
-          2,
-          2,
-          2,
+          1,
+          1,
+          1,
           null,
           null,
           1,
@@ -54,7 +66,7 @@
           null,
           null,
           1,
-          2,
+          1,
           null,
           null
         ]
@@ -83,7 +95,7 @@
         ]
       }
     },
-    "timestamp": 1698883664
+    "timestamp": 1699156590
   },
   "RSpec": {
     "coverage": {

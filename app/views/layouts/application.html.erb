@@ -13,7 +13,11 @@
     <%# These classes come from the Bootstrap CSS framework. %>
     <nav class="navbar navbar-expand-lg bg-primary text-white mb-3 nav_customize">
       <h1 class="title">Phish Or Fish</h1>
-
+      <% if current_user %>
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+      <% else %>
+        <%= link_to 'Login', new_user_session_path %>
+      <% end %>
       
     </nav>
     <div class="container">

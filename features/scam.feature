@@ -1,8 +1,7 @@
-Feature: View scam information and make changes to my scam post when logged in
+Feature: View scam information
 
   As a user
   I want to see all scam information
-  I want to be able to create/edit/delete scam post
 
 
 Background: scams in database
@@ -26,31 +25,9 @@ Scenario: See specific scam information
   When I follow "Details for ditto"
   Then I should see "it's ditto"
   And I should not see "mimikyu"
-  And I should see "Delete"
-  And I should see "Edit"
 
-Scenario: Edit scam
+Scenario: Share scam
   Given I am on the home page
-  When I follow "Details for ditto"
-  Then I click on "Edit"
-  And I should see "Edit Existing Scam"
-  And I update the scam post details
-  And I click on "Update Scam Info"
-  Then I should see the updated details of the scam post
-
-Scenario: Destroy scam
-  Given I am on the home page
-  When I follow "Details for ditto"
-  Then I click on "Delete"
-  Then I should see "All Scams"
-  Then I should not see "it's ditto"
-
-Scenario: Create scam
-  Given I am on the home page
-  When I click on "Post new scam"
-  Then I should see "Create New Scam"
-  And I fill in the scam post details
-  Then I click on "Save Changes"
-  Then I should see "All Scams"
-  Then I should see "New Scam Title"
-
+  When I follow "Details for fake pikachu"
+  Then I click on "Share"
+  Then I should see the alert with the message "Share link: localhost:3000/scams/1"

@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/models/user.rb": {
+      "/Users/asmisriwastawa/phish-or-fish-iter2/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -13,25 +13,48 @@
           null
         ]
       },
-      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/models/scam.rb": {
+      "/Users/asmisriwastawa/phish-or-fish-iter2/app/models/scam.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/controllers/scams_controller.rb": {
+      "/Users/asmisriwastawa/phish-or-fish-iter2/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/asmisriwastawa/phish-or-fish-iter2/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/asmisriwastawa/phish-or-fish-iter2/app/helpers/scams_helper.rb": {
+        "lines": [
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/asmisriwastawa/phish-or-fish-iter2/app/controllers/scams_controller.rb": {
         "lines": [
           1,
           null,
           1,
-          3,
-          3,
+          5,
+          5,
           null,
           null,
           null,
           1,
-          8,
+          16,
           null,
           null,
           1,
@@ -39,9 +62,9 @@
           null,
           null,
           1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
           null,
           null,
           1,
@@ -66,53 +89,42 @@
           null,
           null,
           1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/helpers/scams_helper.rb": {
-        "lines": [
-          1,
+          2,
           null,
           null
         ]
       }
     },
-    "timestamp": 1699156590
+    "timestamp": 1699657929
   },
   "RSpec": {
     "coverage": {
-      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/helpers/application_helper.rb": {
+      "/Users/asmisriwastawa/phish-or-fish-iter2/app/models/user.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/asmisriwastawa/phish-or-fish-iter2/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/helpers/scams_helper.rb": {
+      "/Users/asmisriwastawa/phish-or-fish-iter2/app/helpers/scams_helper.rb": {
         "lines": [
           1,
           null,
           null
         ]
       },
-      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/controllers/scams_controller.rb": {
+      "/Users/asmisriwastawa/phish-or-fish-iter2/app/controllers/scams_controller.rb": {
         "lines": [
           1,
           null,
@@ -163,7 +175,7 @@
           null
         ]
       },
-      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/controllers/application_controller.rb": {
+      "/Users/asmisriwastawa/phish-or-fish-iter2/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
@@ -173,14 +185,14 @@
           null
         ]
       },
-      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/models/scam.rb": {
+      "/Users/asmisriwastawa/phish-or-fish-iter2/app/models/scam.rb": {
         "lines": [
           1,
-          null,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1698883672
+    "timestamp": 1699657419
   }
 }

@@ -2,7 +2,7 @@
 
 <%= form_for @scam, html: { class: 'form' } do |f| %>
   <%= f.label :title, 'Title', class: 'col-form-label' %>
-  <%= f.text_field :title, class: 'form-control' %>
+  <%= f.text_field :title, class: 'form-control', required: true %>
 
   <%= f.label :category, 'Category', class: 'col-form-label' %>
   <%= f.select :category, ['phone', 'email', 'social media'], {}, class: 'form-control col-2' %>
@@ -11,7 +11,7 @@
   <%= f.text_field :zipcode, class: 'form-control col-2' %>
 
   <%= f.label :description, 'Description', class: 'col-form-label' %>
-  <%= f.text_area :description, class: 'form-control' %>
+  <%= f.text_area :description, class: 'form-control', required: true %>
 
   <br/>
   <%= f.submit 'Update Scam Info', class: 'btn btn-primary' %>

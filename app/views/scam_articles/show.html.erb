@@ -10,9 +10,10 @@
   <%= @scam_article.published_at %>
 </p>
 
-<p class='article'>
-  <%= @scam_article.body %>
-</p>
+<div class='article'>
+  <%= sanitize @scam_article.body %>
+</div>
+
 
 <% if current_user && current_user.is_admin %>
 <%= link_to 'Edit', edit_scam_article_path(@scam_article), :class => 'btn btn-primary' %>

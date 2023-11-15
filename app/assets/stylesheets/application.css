@@ -78,6 +78,7 @@ h3 {
   font-family: "proxima-nova",sans-serif;
   font-size: 20px;
   color: #555555;
+  margin: 64px 0;
 }
 
 .flex {
@@ -93,4 +94,8 @@ h3 {
 
 .nav_link:hover {
   color: #56d886;
+}
+
+.note {
+  
 }

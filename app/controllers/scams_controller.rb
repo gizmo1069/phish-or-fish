@@ -1,8 +1,9 @@
 class ScamsController < ApplicationController
   before_action :set_scam, only: [:edit, :update, :destroy]
   before_action :check_owner, only: [:edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create]
   
-
+  
   def show
     id = params[:id] # retrieve scam ID from URI route
     @scam = Scam.find(id) # look up scam by unique ID
@@ -18,7 +19,7 @@ class ScamsController < ApplicationController
   end
 
   def create
-    @scam = Scam.create!(scam_params)
+    @scam = Scam.create!(scam_params.merge(user_id: current_user.id))
     flash[:notice] = "#{@scam.title} was successfully created."
     redirect_to scams_path
   end

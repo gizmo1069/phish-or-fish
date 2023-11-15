@@ -12,11 +12,15 @@
   <body>
     <%# These classes come from the Bootstrap CSS framework. %>
     <nav class="navbar navbar-expand-lg bg-primary text-white mb-3 nav_customize">
-      <h1 class="title">Phish Or Fish</h1>
+      <div class='flex'>
+        <h1 class="title">Phish Or Fish</h1>
+        <%= link_to 'Ongoing Scams', scams_path, class: 'nav_link'  %>
+        <%= link_to 'Common Scams', scam_articles_path, class: 'nav_link' %>
+      </div>
       <% if current_user %>
-        <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'nav_link' %>
       <% else %>
-        <%= link_to 'Login', new_user_session_path %>
+        <%= link_to 'Login', new_user_session_path, class: 'nav_link' %>
       <% end %>
       
     </nav>

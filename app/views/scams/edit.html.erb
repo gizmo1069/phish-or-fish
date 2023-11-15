@@ -1,15 +1,19 @@
 <h2>Edit Existing Scam</h2>
 
-<%= form_tag scams_path, :class => 'form' do %>
-  <%= label :scam, :title, 'Title', :class => 'col-form-label' %>
-  <%= text_field :scam, :title, :class => 'form-control' %>
-  <%= label :scam, :category, 'Category', :class => 'col-form-label'  %>
-  <%= select :scam, :category, ['phone','email','social media'], {}, {:class => 'form-control col-2'} %>
-  <%= label :scam, :zipcode, 'Zipcode', :class => 'col-form-label'  %>
-  <%= text_field :scam, :zipcode, :class => 'form-control col-2' %>
-  <%= label :scam, :description, 'Description', :class => 'col-form-label'  %>
-  <%= text_area :scam, :description, :class => 'form-control' %>
+<%= form_for @scam, html: { class: 'form' } do |f| %>
+  <%= f.label :title, 'Title', class: 'col-form-label' %>
+  <%= f.text_field :title, class: 'form-control' %>
+
+  <%= f.label :category, 'Category', class: 'col-form-label' %>
+  <%= f.select :category, ['phone', 'email', 'social media'], {}, class: 'form-control col-2' %>
+
+  <%= f.label :zipcode, 'Zipcode', class: 'col-form-label' %>
+  <%= f.text_field :zipcode, class: 'form-control col-2' %>
+
+  <%= f.label :description, 'Description', class: 'col-form-label' %>
+  <%= f.text_area :description, class: 'form-control' %>
+
   <br/>
-  <%= submit_tag 'Update Scam Info', :class => 'btn btn-primary' %>
-  <%= link_to 'Cancel', scams_path, :class => 'btn btn-secondary' %>
+  <%= f.submit 'Update Scam Info', class: 'btn btn-primary' %>
+  <%= link_to 'Cancel', scams_path, class: 'btn btn-secondary' %>
 <% end %>

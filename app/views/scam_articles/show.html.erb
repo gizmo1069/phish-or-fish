@@ -1,0 +1,21 @@
+<h2><%= @scam_article.title %></h1>
+
+<p>
+  <strong>Author:</strong>
+  <%= @scam_article.author %>
+</p>
+
+<p>
+  <strong>Published At:</strong>
+  <%= @scam_article.published_at %>
+</p>
+
+<p class='article'>
+  <%= @scam_article.body %>
+</p>
+
+<% if current_user && current_user.is_admin %>
+<%= link_to 'Edit', edit_scam_article_path(@scam_article), :class => 'btn btn-primary' %>
+<%= link_to 'Delete', scam_article_path(@scam_article), method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger' %>
+<% end %>
+<%= link_to 'Back', scam_articles_path, :class => 'btn btn-secondary' %>

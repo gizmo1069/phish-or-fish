@@ -74,3 +74,23 @@ h3 {
   border-color: transparent;
 }
 
+.article {
+  font-family: "proxima-nova",sans-serif;
+  font-size: 20px;
+  color: #555555;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.nav_link {
+  margin-left: 32px;
+  font-size: 20px;
+  color: white;
+}
+
+.nav_link:hover {
+  color: #56d886;
+}

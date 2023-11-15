@@ -1,4 +1,7 @@
 class ScamsController < ApplicationController
+  before_action :set_scam, only: [:edit, :update, :destroy]
+  before_action :check_owner, only: [:edit, :update, :destroy]
+  
 
   def show
     id = params[:id] # retrieve scam ID from URI route
@@ -39,8 +42,18 @@ class ScamsController < ApplicationController
   end
 
   private
-  # Making "internal" methods private is not required, but is a common practice.
-  # This helps make clear which methods respond to requests, and which ones do not.
+
+  def set_scam
+    @scam = Scam.find(params[:id])
+  end
+
+  def check_owner
+    unless current_user&.id == @scam.user_id
+      flash[:warning] = "You are not authorized to perform this action."
+      redirect_to scams_path
+    end
+  end
+
   def scam_params
     params.require(:scam).permit(:title, :category, :zipcode, :description)
   end

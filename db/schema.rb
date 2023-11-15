@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20231105030815) do
+ActiveRecord::Schema.define(version: 20231115043541) do
+
+  create_table "scam_articles", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "author"
+    t.date     "published_at"
+    t.string   "category"
+    t.string   "urls"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "scams", force: :cascade do |t|
     t.string  "title"
@@ -33,6 +44,7 @@ ActiveRecord::Schema.define(version: 20231105030815) do
     t.datetime "remember_created_at"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.boolean  "is_admin"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

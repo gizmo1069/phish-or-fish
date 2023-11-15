@@ -1,16 +1,12 @@
 # seeds.rb
 
-# Create Users
+# Create Users and Scams
 5.times do |i|
   User.create!(
     email: "user#{i + 1}@example.com",
     password: "password#{i + 1}",
     is_admin: i.zero? # First user will be an admin
   )
-end
-
-# Create Scam posts
-5.times do |i|
 
   # For each user, create a scam with randomized categories and more realistic descriptions
   categories = ['phone', 'email', 'social media']
@@ -21,7 +17,7 @@ end
     "Phone call from 'IRS' claiming there's a lawsuit against me and demanding immediate payment.",
     "Email received with an attachment, claiming to be an invoice for a service I never used."
   ]
-
+  
   Scam.create!(
     title: "Scam Report #{i + 1}: #{categories.sample.capitalize} Scam",
     description: scam_descriptions[i],
@@ -31,6 +27,7 @@ end
     user_id: User.find_by(email: "user#{i + 1}@example.com").id
   )
 end
+
 
 # Create scam articles
 ScamArticle.create!(

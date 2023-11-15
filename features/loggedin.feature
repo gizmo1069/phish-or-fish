@@ -27,21 +27,17 @@ Feature: Make changes to my scam post
     And I should see "Delete"
     And I should see "Edit"
   
-  Scenario: Edit scam
+  Scenario: Edit scam (no authorization)
     Given I am on the home page
     When I follow "Details for ditto"
     Then I click on "Edit"
-    And I should see "Edit Existing Scam"
-    And I update the scam post details
-    And I click on "Update Scam Info"
-    Then I should see the updated details of the scam post
+    Then I should see "You are not authorized to perform this action."
 
-  Scenario: Destroy scam
+  Scenario: Destroy scam (no authorization)
     Given I am on the home page
     When I follow "Details for ditto"
     Then I click on "Delete"
-    Then I should see "All Scams"
-    Then I should not see "it's ditto"
+    Then I should see "You are not authorized to perform this action."
 
   Scenario: Create scam
     Given I am on the home page
@@ -51,3 +47,31 @@ Feature: Make changes to my scam post
     Then I click on "Save Changes"
     Then I should see "All Scams"
     Then I should see "New Scam Title"
+
+Scenario: Edit scam (authorized)
+    Given I am on the home page
+    When I click on "Post new scam"
+    Then I should see "Create New Scam"
+    And I fill in the scam post details
+    Then I click on "Save Changes"
+    Then I should see "All Scams"
+    Then I should see "New Scam Title"
+    When I follow "Details for New Scam Title"
+    Then I click on "Edit"
+    And I should see "Edit Existing Scam"
+    And I update the scam post details
+    And I click on "Update Scam Info"
+    Then I should see the updated details of the scam post
+
+Scenario: Destroy scam (authorized)
+    Given I am on the home page
+    When I click on "Post new scam"
+    Then I should see "Create New Scam"
+    And I fill in the scam post details
+    Then I click on "Save Changes"
+    Then I should see "All Scams"
+    Then I should see "New Scam Title"
+    When I follow "Details for New Scam Title"
+    Then I click on "Delete"
+    Then I should see "All Scams"
+    Then I should not see "New Scam Title"

@@ -4178,3 +4178,1125 @@ Processing by ScamsController#show as HTML
   Rendered scams/show.html.erb within layouts/application (0.7ms)
   Rendered layouts/_flash.erb (0.0ms)
 Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2023-11-15 02:48:06 -0500
+
+
+Started GET "/scams" for ::1 at 2023-11-15 02:48:07 -0500
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.6ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  Rendered scams/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 125ms (Views: 122.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/scam_articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2023-11-15 02:48:07 -0500
+
+
+Started GET "/assets/scam_articles.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2023-11-15 02:48:07 -0500
+
+
+Started GET "/assets/application.self-4e2ba731ec98af6b43beaaf4891ebc5f59111451e056c1da35907e1d9867c7c5.css?body=1" for ::1 at 2023-11-15 02:48:07 -0500
+
+
+Started GET "/scams" for ::1 at 2023-11-15 02:48:10 -0500
+Processing by ScamsController#index as HTML
+  [1m[35mScam Load (0.2ms)[0m  SELECT "scams".* FROM "scams"
+  Rendered scams/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 02:48:11 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.2ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  Rendered scam_articles/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scam_articles/2" for ::1 at 2023-11-15 02:48:15 -0500
+Processing by ScamArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mScamArticle Load (0.2ms)[0m  SELECT  "scam_articles".* FROM "scam_articles" WHERE "scam_articles"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered scam_articles/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 26ms (Views: 16.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 02:48:20 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.2ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  Rendered scam_articles/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scam_articles/2" for ::1 at 2023-11-15 02:48:53 -0500
+Processing by ScamArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mScamArticle Load (0.2ms)[0m  SELECT  "scam_articles".* FROM "scam_articles" WHERE "scam_articles"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered scam_articles/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 02:48:56 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.1ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  Rendered scam_articles/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-15 02:54:31 -0500
+Processing by ScamsController#index as HTML
+  [1m[35mScam Load (0.2ms)[0m  SELECT "scams".* FROM "scams"
+  Rendered scams/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scams/7" for ::1 at 2023-11-15 02:54:34 -0500
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered scams/show.html.erb within layouts/application (15.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scams/8" for ::1 at 2023-11-15 02:54:50 -0500
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered scams/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-15 02:56:27 -0500
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  Rendered scams/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 02:56:28 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[35mScamArticle Load (0.2ms)[0m  SELECT "scam_articles".* FROM "scam_articles"
+  Rendered scam_articles/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 02:56:29 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.2ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  Rendered scam_articles/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.5ms)[0m  [1mDROP TABLE "scam_articles"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "scam_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "author" varchar, "published_at" date, "category" varchar, "urls" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "scams"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "category" varchar, "zipcode" varchar, "url" varchar, "user" varchar, "user_id" integer) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_scams_on_user_id" ON "scams" ("user_id")
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "is_admin" boolean) 
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "scam_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "author" varchar, "published_at" date, "category" varchar, "urls" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "scams"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "scams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "category" varchar, "zipcode" varchar, "url" varchar, "user" varchar, "user_id" integer) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_scams_on_user_id" ON "scams" ("user_id")[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "users"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "is_admin" boolean) [0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20231115043541')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20231115005848')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20231115024929')
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "scam_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "author" varchar, "published_at" date, "category" varchar, "urls" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "scams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "category" varchar, "zipcode" varchar, "url" varchar, "user" varchar, "user_id" integer) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE  INDEX "index_scams_on_user_id" ON "scams" ("user_id")
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "is_admin" boolean) [0m
+  [1m[35m (0.4ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20231115043541')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20231101231406')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20231105030815')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20231115005848')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20231115024929')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20231105030124')[0m
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 02:57:17 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.6ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  Rendered scam_articles/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 02:57:19 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[35mScamArticle Load (0.3ms)[0m  SELECT "scam_articles".* FROM "scam_articles"
+  Rendered scam_articles/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.6ms)[0m  [1mDROP TABLE "scam_articles"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "scam_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "author" varchar, "published_at" date, "category" varchar, "urls" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "scams"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "category" varchar, "zipcode" varchar, "url" varchar, "user" varchar, "user_id" integer) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_scams_on_user_id" ON "scams" ("user_id")
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "is_admin" boolean) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "scam_articles"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scam_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "author" varchar, "published_at" date, "category" varchar, "urls" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "scams"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "category" varchar, "zipcode" varchar, "url" varchar, "user" varchar, "user_id" integer) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_scams_on_user_id" ON "scams" ("user_id")
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "is_admin" boolean) 
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.7ms)[0m  [1mDROP TABLE "scam_articles"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "scam_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "author" varchar, "published_at" date, "category" varchar, "urls" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "scams"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "scams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "category" varchar, "zipcode" varchar, "url" varchar, "user" varchar, "user_id" integer) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_scams_on_user_id" ON "scams" ("user_id")
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "is_admin" boolean) 
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "scam_articles"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "scam_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "author" varchar, "published_at" date, "category" varchar, "urls" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "scams"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "scams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "category" varchar, "zipcode" varchar, "url" varchar, "user" varchar, "user_id" integer) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_scams_on_user_id" ON "scams" ("user_id")
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "is_admin" boolean) 
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user1@example.com"], ["encrypted_password", "$2a$12$4GJLwWF1zPqlktOjjZuwfOKn5iDf09HVrt2kwknmww.lkDUydyy6S"], ["is_admin", "t"], ["created_at", "2023-11-15 07:59:01.659943"], ["updated_at", "2023-11-15 07:59:01.659943"]]
+  [1m[36m (0.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user2@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user2@example.com"], ["encrypted_password", "$2a$12$BrJ0aMnzXZPiyMvrE8FMa.SnopoMvRso9SA3CyYtVDbA7feGAUXLq"], ["is_admin", "f"], ["created_at", "2023-11-15 07:59:01.881158"], ["updated_at", "2023-11-15 07:59:01.881158"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user3@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user3@example.com"], ["encrypted_password", "$2a$12$6/RFXDLus3Uwo9zbybSK2.p8CihfX1AhBpU1yOFkiny4ra5qk3bK."], ["is_admin", "f"], ["created_at", "2023-11-15 07:59:02.102381"], ["updated_at", "2023-11-15 07:59:02.102381"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user4@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user4@example.com"], ["encrypted_password", "$2a$12$0fxV4VaXG0ETJzC9JvEKDOvca6s2e1zCf.uFEgOZ5vGxjyruFk1T2"], ["is_admin", "f"], ["created_at", "2023-11-15 07:59:02.323278"], ["updated_at", "2023-11-15 07:59:02.323278"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user5@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user5@example.com"], ["encrypted_password", "$2a$12$WugFkK3woJZ5zR5I81Gbgeg9mdiXqvRUIMVg1l9I.IqtylIU7/iFy"], ["is_admin", "f"], ["created_at", "2023-11-15 07:59:02.544110"], ["updated_at", "2023-11-15 07:59:02.544110"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user1@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 1: Email Scam"], ["description", "Received a call saying I won a prize and needed to provide credit card info to claim."], ["category", "email"], ["zipcode", "10000"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png"], ["user_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user2@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 2: Phone Scam"], ["description", "An email claiming to be from a bank, asking to click on a suspicious link to verify the account."], ["category", "social media"], ["zipcode", "10001"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/134.png"], ["user_id", 2]]
+  [1m[36m (0.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user3@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 3: Phone Scam"], ["description", "A message on social media from an unknown profile promising easy money with a small investment."], ["category", "email"], ["zipcode", "10002"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/135.png"], ["user_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user4@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 4: Email Scam"], ["description", "Phone call from 'IRS' claiming there's a lawsuit against me and demanding immediate payment."], ["category", "phone"], ["zipcode", "10003"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/136.png"], ["user_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user5@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 5: Social media Scam"], ["description", "Email received with an attachment, claiming to be an invoice for a service I never used."], ["category", "email"], ["zipcode", "10004"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/137.png"], ["user_id", 5]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "scam_articles" ("title", "body", "author", "published_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Phone Scams"], ["body", "These scams typically involve the scammer calling you and pretending to be from a legitimate company or organization, such as a bank, government agency, or utility company. They may say that there is a problem with your account and that you need to provide them with your personal information or credit card number to fix it. Embassy/citizenship scams: The scammer will call you and claim to be from your Embassy or US Homeland Security. They may say your personal information is being used to commit crimes and there is a warrant in your name. You will be asked to open a video app and remain monitored on video to prove your innocence. You may also be asked to pay large sums of money for a “bail bond” with the promise it will be returned later. In these cases, you will be asked to send more and more money until you realize it’s a scam and communication is ended. Tech support / financial institute scams: The scammer will call you and claim to be from a company. They will say that there is a problem with your computer or account and that you need to give them remote access to fix it. Once they have remote access, they can steal your personal information or install malware on your computer to learn passwords. IRS scams: The scammer will call you and claim to be from the IRS. They will say that you owe money in taxes and that you need to pay immediately. They may also threaten to arrest you if you don't pay."], ["author", "Sam"], ["published_at", "2023-11-14"], ["created_at", "2023-11-15 07:59:02.554093"], ["updated_at", "2023-11-15 07:59:02.554093"]]
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scam_articles" ("title", "body", "author", "published_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "How to Avoid and Recognize Scams"], ["body", "Scammers use email or text messages to trick you into giving them your personal and financial information. But there are several ways to protect yourself. nHow To Recognize Phishing"], ["author", "Federal Trade Commission"], ["published_at", "2023-11-14"], ["created_at", "2023-11-15 07:59:02.558055"], ["updated_at", "2023-11-15 07:59:02.558055"]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.7ms)[0m  [1mDROP TABLE "scam_articles"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scam_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "author" varchar, "published_at" date, "category" varchar, "urls" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "scams"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "category" varchar, "zipcode" varchar, "url" varchar, "user" varchar, "user_id" integer) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_scams_on_user_id" ON "scams" ("user_id")
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "is_admin" boolean) 
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "scam_articles"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "scam_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "author" varchar, "published_at" date, "category" varchar, "urls" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "scams"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "category" varchar, "zipcode" varchar, "url" varchar, "user" varchar, "user_id" integer) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_scams_on_user_id" ON "scams" ("user_id")
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "is_admin" boolean) 
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user1@example.com"], ["encrypted_password", "$2a$12$7FOqQfG/V8goWUorzEjkk.TPyQxMsms9lt.1JcVnuuxXDjmZf6zpq"], ["is_admin", "t"], ["created_at", "2023-11-15 07:59:12.409961"], ["updated_at", "2023-11-15 07:59:12.409961"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user2@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user2@example.com"], ["encrypted_password", "$2a$12$3A8n7IDVakE/8DZq9NAt5edM0bqxLquk8csEDadfP4TMuq90XpkNq"], ["is_admin", "f"], ["created_at", "2023-11-15 07:59:12.631146"], ["updated_at", "2023-11-15 07:59:12.631146"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user3@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user3@example.com"], ["encrypted_password", "$2a$12$NZ/VaWSGOoY7xlRumEs3nOs79m41U3BX72/hqeDzsTQ1Kc88Rxr0u"], ["is_admin", "f"], ["created_at", "2023-11-15 07:59:12.852276"], ["updated_at", "2023-11-15 07:59:12.852276"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user4@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user4@example.com"], ["encrypted_password", "$2a$12$TsZSVNh2FFuw5A9C86DzfObxwMmId9z.Umepbm69T8YISawjvVEEm"], ["is_admin", "f"], ["created_at", "2023-11-15 07:59:13.073180"], ["updated_at", "2023-11-15 07:59:13.073180"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user5@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user5@example.com"], ["encrypted_password", "$2a$12$.HSkFNwqMArjx/cEUEe.oOWIdbhinMqK9G4jN7wsEq3PCXnSaumAC"], ["is_admin", "f"], ["created_at", "2023-11-15 07:59:13.294138"], ["updated_at", "2023-11-15 07:59:13.294138"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user1@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 1: Email Scam"], ["description", "Received a call saying I won a prize and needed to provide credit card info to claim."], ["category", "email"], ["zipcode", "10000"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png"], ["user_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user2@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 2: Phone Scam"], ["description", "An email claiming to be from a bank, asking to click on a suspicious link to verify the account."], ["category", "phone"], ["zipcode", "10001"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/134.png"], ["user_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user3@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 3: Phone Scam"], ["description", "A message on social media from an unknown profile promising easy money with a small investment."], ["category", "phone"], ["zipcode", "10002"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/135.png"], ["user_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user4@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 4: Phone Scam"], ["description", "Phone call from 'IRS' claiming there's a lawsuit against me and demanding immediate payment."], ["category", "email"], ["zipcode", "10003"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/136.png"], ["user_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user5@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 5: Email Scam"], ["description", "Email received with an attachment, claiming to be an invoice for a service I never used."], ["category", "phone"], ["zipcode", "10004"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/137.png"], ["user_id", 5]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "scam_articles" ("title", "body", "author", "published_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Phone Scams"], ["body", "These scams typically involve the scammer calling you and pretending to be from a legitimate company or organization, such as a bank, government agency, or utility company. They may say that there is a problem with your account and that you need to provide them with your personal information or credit card number to fix it. Embassy/citizenship scams: The scammer will call you and claim to be from your Embassy or US Homeland Security. They may say your personal information is being used to commit crimes and there is a warrant in your name. You will be asked to open a video app and remain monitored on video to prove your innocence. You may also be asked to pay large sums of money for a “bail bond” with the promise it will be returned later. In these cases, you will be asked to send more and more money until you realize it’s a scam and communication is ended. Tech support / financial institute scams: The scammer will call you and claim to be from a company. They will say that there is a problem with your computer or account and that you need to give them remote access to fix it. Once they have remote access, they can steal your personal information or install malware on your computer to learn passwords. IRS scams: The scammer will call you and claim to be from the IRS. They will say that you owe money in taxes and that you need to pay immediately. They may also threaten to arrest you if you don't pay."], ["author", "Sam"], ["published_at", "2023-11-14"], ["created_at", "2023-11-15 07:59:13.303463"], ["updated_at", "2023-11-15 07:59:13.303463"]]
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scam_articles" ("title", "body", "author", "published_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "How to Avoid and Recognize Scams"], ["body", "Scammers use email or text messages to trick you into giving them your personal and financial information. But there are several ways to protect yourself. nHow To Recognize Phishing"], ["author", "Federal Trade Commission"], ["published_at", "2023-11-14"], ["created_at", "2023-11-15 07:59:13.307127"], ["updated_at", "2023-11-15 07:59:13.307127"]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "scam_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "author" varchar, "published_at" date, "category" varchar, "urls" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "scams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "category" varchar, "zipcode" varchar, "url" varchar, "user" varchar, "user_id" integer) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE  INDEX "index_scams_on_user_id" ON "scams" ("user_id")
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "is_admin" boolean) [0m
+  [1m[35m (0.4ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20231115043541')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20231101231406')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20231105030815')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20231115005848')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20231115024929')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20231105030124')[0m
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 02:59:22 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.7ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  Rendered scam_articles/index.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 63ms (Views: 60.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/scam_articles/2" for ::1 at 2023-11-15 02:59:25 -0500
+Processing by ScamArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mScamArticle Load (0.2ms)[0m  SELECT  "scam_articles".* FROM "scam_articles" WHERE "scam_articles"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered scam_articles/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 9.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 02:59:26 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.2ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  Rendered scam_articles/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 03:03:17 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.8ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  Rendered scam_articles/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.5ms)[0m  [1mDROP TABLE "scam_articles"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "scam_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "author" varchar, "published_at" date, "category" varchar, "urls" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "scams"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "category" varchar, "zipcode" varchar, "url" varchar, "user" varchar, "user_id" integer) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_scams_on_user_id" ON "scams" ("user_id")
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "is_admin" boolean) 
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "scam_articles"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "scam_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "author" varchar, "published_at" date, "category" varchar, "urls" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.5ms)[0m  [1mDROP TABLE "scams"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "category" varchar, "zipcode" varchar, "url" varchar, "user" varchar, "user_id" integer) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_scams_on_user_id" ON "scams" ("user_id")
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "is_admin" boolean) 
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user1@example.com"], ["encrypted_password", "$2a$12$p55JoxaJqnxd1win9Q5H2ewNPefVK2BdP4.mBnlbU6BtDVVggAp8e"], ["is_admin", "t"], ["created_at", "2023-11-15 08:03:24.236983"], ["updated_at", "2023-11-15 08:03:24.236983"]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user2@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user2@example.com"], ["encrypted_password", "$2a$12$8KSGtUEN2QTYDeRtlg8SheS26Q26x3m3xjWXxuAuulijsKZ3Qlway"], ["is_admin", "f"], ["created_at", "2023-11-15 08:03:24.457477"], ["updated_at", "2023-11-15 08:03:24.457477"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user3@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user3@example.com"], ["encrypted_password", "$2a$12$Rv1l.QPHkyvyF6ew0Qxy/OVN6budmyTudT9FUIG2O/hP/UqTrUVlq"], ["is_admin", "f"], ["created_at", "2023-11-15 08:03:24.678096"], ["updated_at", "2023-11-15 08:03:24.678096"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user4@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user4@example.com"], ["encrypted_password", "$2a$12$CiDQyirmizZT8izgNGSnU.1hZyET5.smQr3hbB9dccOKuCidIsxkq"], ["is_admin", "f"], ["created_at", "2023-11-15 08:03:24.899015"], ["updated_at", "2023-11-15 08:03:24.899015"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user5@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "is_admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "user5@example.com"], ["encrypted_password", "$2a$12$RYpyGpry7zBTfYVfctFIn.gGCQOrc6kYmWbpXIZiOK9g82kJyGiP6"], ["is_admin", "f"], ["created_at", "2023-11-15 08:03:25.120588"], ["updated_at", "2023-11-15 08:03:25.120588"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user1@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 1: Phone Scam"], ["description", "Received a call saying I won a prize and needed to provide credit card info to claim."], ["category", "email"], ["zipcode", "10000"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png"], ["user_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user2@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 2: Phone Scam"], ["description", "An email claiming to be from a bank, asking to click on a suspicious link to verify the account."], ["category", "phone"], ["zipcode", "10001"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/134.png"], ["user_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user3@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 3: Email Scam"], ["description", "A message on social media from an unknown profile promising easy money with a small investment."], ["category", "phone"], ["zipcode", "10002"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/135.png"], ["user_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user4@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 4: Social media Scam"], ["description", "Phone call from 'IRS' claiming there's a lawsuit against me and demanding immediate payment."], ["category", "phone"], ["zipcode", "10003"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/136.png"], ["user_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "user5@example.com"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scams" ("title", "description", "category", "zipcode", "url", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Scam Report 5: Phone Scam"], ["description", "Email received with an attachment, claiming to be an invoice for a service I never used."], ["category", "email"], ["zipcode", "10004"], ["url", "https://assets.pokemon.com/assets/cms2/img/pokedex/full/137.png"], ["user_id", 5]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "scam_articles" ("title", "body", "author", "published_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Phone Scams"], ["body", "These scams typically involve the scammer calling you and pretending to be from a legitimate company or organization, such as a bank, government agency, or utility company. They may say that there is a problem with your account and that you need to provide them with your personal information or credit card number to fix it. Embassy/citizenship scams: The scammer will call you and claim to be from your Embassy or US Homeland Security. They may say your personal information is being used to commit crimes and there is a warrant in your name. You will be asked to open a video app and remain monitored on video to prove your innocence. You may also be asked to pay large sums of money for a “bail bond” with the promise it will be returned later. In these cases, you will be asked to send more and more money until you realize it’s a scam and communication is ended. Tech support / financial institute scams: The scammer will call you and claim to be from a company. They will say that there is a problem with your computer or account and that you need to give them remote access to fix it. Once they have remote access, they can steal your personal information or install malware on your computer to learn passwords. IRS scams: The scammer will call you and claim to be from the IRS. They will say that you owe money in taxes and that you need to pay immediately. They may also threaten to arrest you if you don't pay."], ["author", "Sam"], ["published_at", "2023-11-14"], ["created_at", "2023-11-15 08:03:25.130186"], ["updated_at", "2023-11-15 08:03:25.130186"]]
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scam_articles" ("title", "body", "author", "published_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "How to Avoid and Recognize Scams"], ["body", "Scammers use email or text messages to trick you into giving them your personal and financial information. But there are several ways to protect yourself."], ["author", "Federal Trade Commission"], ["published_at", "2023-11-14"], ["created_at", "2023-11-15 08:03:25.133874"], ["updated_at", "2023-11-15 08:03:25.133874"]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "scam_articles" ("title", "body", "author", "published_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Protect yourself from Phishing"], ["body", "Phishing (pronounced: fishing) is an attack that attempts to steal your money, or your identity, by getting you to reveal personal information -- such as credit card numbers, bank information, or passwords -- on websites that pretend to be legitimate. Cybercriminals typically pretend to be reputable companies, friends, or acquaintances in a fake message, which contains a link to a phishing website."], ["author", "Microsoft Support"], ["published_at", "2023-11-14"], ["created_at", "2023-11-15 08:03:25.134492"], ["updated_at", "2023-11-15 08:03:25.134492"]]
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "scam_articles" ("title", "body", "author", "published_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Common Targets"], ["body", "Religious organizations, community groups, and older adults are often targets for fraudsters."], ["author", "BC Securities Commission"], ["published_at", "2023-11-14"], ["created_at", "2023-11-15 08:03:25.135019"], ["updated_at", "2023-11-15 08:03:25.135019"]]
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "scam_articles" ("title", "body", "author", "published_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Scam and Phishing Resources | Please Read!!"], ["body", "Hello all,\n\n  As technology continues to advance and expand, so do scammers, learning new methods to try to steal your money or your identity. Public Safety has created a new page that includes information on common scams to be aware of and some helpful tips to keep yourself and our community safe: https://publicsafety.columbia.edu/scams.\n  \n  Below are some tips from Public Safety that you can use to avoid being scammed via email:\n  Never give out your personal information over the phone or email unless you are sure of the identity of the person you are talking to.\n  Double-check the email address of senders to ensure it is accurate before clicking any links or replying to it!\n  Be suspicious of any email or phone call that asks for your personal information or credit card number.\n  Personal information includes your cellphone number, email address, banking information, credit card information, etc. \n  Do not click on links in emails or text messages from people you don't know. \n  Be careful about what information you share on social media. \n  Keep your software up to date. \n  Use strong passwords and change them regularly. \n  If you think you have been scammed, you should report it to the authorities and to the company or organization that was impersonated. You should also keep a record of all the information you have about the scam, including the phone number, email address, and website address. \n  If you are not sure if an email is a scam or real, you can take a screenshot and send it to CS Advising to verify. Never forward suspicious emails!!\n  If you have any questions or concerns about phishing scams or suspicious emails, do not hesitate to reach out to CUIT, CRF, Public Safety, or CS Advising."], ["author", "Columbia CS Advising"], ["published_at", "2023-11-14"], ["created_at", "2023-11-15 08:03:25.135527"], ["updated_at", "2023-11-15 08:03:25.135527"]]
+  [1m[35m (0.2ms)[0m  commit transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "scam_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "author" varchar, "published_at" date, "category" varchar, "urls" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "scams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "category" varchar, "zipcode" varchar, "url" varchar, "user" varchar, "user_id" integer) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_scams_on_user_id" ON "scams" ("user_id")
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "is_admin" boolean) [0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20231115043541')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20231101231406')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20231105030815')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20231115005848')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20231115024929')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20231105030124')[0m
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 03:03:32 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.8ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  Rendered scam_articles/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 65ms (Views: 63.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 03:03:32 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[35mScamArticle Load (0.2ms)[0m  SELECT "scam_articles".* FROM "scam_articles"
+  Rendered scam_articles/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-15 03:03:46 -0500
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  Rendered scams/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 12.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scams/1" for ::1 at 2023-11-15 03:03:53 -0500
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScam Load (0.2ms)[0m  SELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered scams/show.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 29ms (Views: 19.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-15 03:04:00 -0500
+Processing by ScamsController#index as HTML
+  [1m[35mScam Load (0.2ms)[0m  SELECT "scams".* FROM "scams"
+  Rendered scams/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 03:33:55 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (1.1ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  Rendered scam_articles/index.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_flash.erb (0.2ms)
+Completed 200 OK in 66ms (Views: 64.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-15 03:33:56 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/sessions/new.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 14.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-11-15 03:34:28 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pBrZqzmKSCtFMUSW3a93+AwB4ztKWejM6gqKRC2zUDVHtdHHFcFfc9AQbVSsQshEIez8IgnQhwMMLjInnWDDDg==", "user"=>{"email"=>"sdf@asdf", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "sdf@asdf"]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.4ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pBrZqzmKSCtFMUSW3a93+AwB4ztKWejM6gqKRC2zUDVHtdHHFcFfc9AQbVSsQshEIez8IgnQhwMMLjInnWDDDg==", "user"=>{"email"=>"sdf@asdf", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (0.1ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 259ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-11-15 03:34:30 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/registrations/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2023-11-15 03:34:42 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V/4zugloDu+A66ujItQaIwU1GVqJeReXZEUPoaPoOnm0UTvWJSMZtxXKgmFTOaWfKNgGQ8rweFiCYbfCEzupQg==", "user"=>{"email"=>"zhaosally0@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'zhaosally0@gmail.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "zhaosally0@gmail.com"], ["encrypted_password", "$2a$12$Tz6qks3UjNjtccmP92xLueHRNk30Ld20oBNLYrJrS8i5dR7MDHKEu"], ["created_at", "2023-11-15 08:34:42.780420"], ["updated_at", "2023-11-15 08:34:42.780420"]]
+  [1m[35m (0.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 266ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2023-11-15 03:34:42 -0500
+
+
+Started GET "/scams" for ::1 at 2023-11-15 03:34:42 -0500
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered scams/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2023-11-15 03:34:45 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jFK+nYi39ibDWcyqV6y2DC26Flj1tgfY1MbJONm9ZExv/bbxpPzhflZ45WgmQQmwAFcJQbY/aBcy4nFbaW73dw=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2023-11-15 03:34:45 -0500
+
+
+Started GET "/scams" for ::1 at 2023-11-15 03:34:45 -0500
+Processing by ScamsController#index as HTML
+  [1m[35mScam Load (0.2ms)[0m  SELECT "scams".* FROM "scams"
+  Rendered scams/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-15 03:34:47 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/sessions/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-11-15 03:34:53 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+GHdKpyNiOzUyNMKgY61FhWRWrwwrnZxZ1Hhv06UKBDMbE/ehB6zohwGi8RNjDPmB2Zfp+uC4Gw6xGOnjnPj9Q==", "user"=>{"email"=>"zhaosally0@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "zhaosally0@gmail.com"]]
+Completed 401 Unauthorized in 261ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+GHdKpyNiOzUyNMKgY61FhWRWrwwrnZxZ1Hhv06UKBDMbE/ehB6zohwGi8RNjDPmB2Zfp+uC4Gw6xGOnjnPj9Q==", "user"=>{"email"=>"zhaosally0@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (0.1ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 234ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-11-15 03:34:58 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"164DZEw11+UICCyqz6vxd7f9xwtwVQvpRzP5nSZU2grjo5GQVKbsq8DGdGQDqXeHpQrCEKt5nfQapnuF5rMR7w==", "user"=>{"email"=>"zhaosally0@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "zhaosally0@gmail.com"]]
+Completed 401 Unauthorized in 253ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"164DZEw11+UICCyqz6vxd7f9xwtwVQvpRzP5nSZU2grjo5GQVKbsq8DGdGQDqXeHpQrCEKt5nfQapnuF5rMR7w==", "user"=>{"email"=>"zhaosally0@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (0.1ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/sessions/new.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 234ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-11-15 03:35:01 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_error_messages.html.erb (0.0ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/registrations/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2023-11-15 03:35:07 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OsXmGmYXOE7UoVwBxqcvoOZCsgLpuKjAb/9rB7XxfVMOyHTufoQDABxvBM8KpalQ9LW3GTKUPt0yaukfdRa2tg==", "user"=>{"email"=>"zhaosally0@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'zhaosally0@gmail.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_error_messages.html.erb (0.1ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (0.1ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/registrations/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 265ms (Views: 3.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-15 03:35:10 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2023-11-15 03:35:11 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_error_messages.html.erb (0.0ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/passwords/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/password" for ::1 at 2023-11-15 03:35:15 -0500
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yUBgiZ3hgrKPQ3R3xADZ7eSw/hJZV9zMo3kqj+ws0Nz9TfJ9hXK5/EeNLLkIAl8d9kf7CYJ7StH+7KiXLMsbOQ==", "user"=>{"email"=>"zhaosally0@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "zhaosally0@gmail.com"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."reset_password_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["reset_password_token", "5b3f626015246ea48510b24971927f2fa852e769589df6ddc8bad01f542c43e8"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "reset_password_token" = ?, "reset_password_sent_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["reset_password_token", "5b3f626015246ea48510b24971927f2fa852e769589df6ddc8bad01f542c43e8"], ["reset_password_sent_at", "2023-11-15 08:35:15.745692"], ["updated_at", "2023-11-15 08:35:15.745889"], ["id", 6]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/mailer/reset_password_instructions.html.erb (0.3ms)
+
+Devise::Mailer#reset_password_instructions: processed outbound mail in 64.1ms
+
+Sent mail to zhaosally0@gmail.com (8.6ms)
+Date: Wed, 15 Nov 2023 03:35:15 -0500
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: zhaosally0@gmail.com
+Message-ID: <655482c3c7c65_fe738dd8cc7c6375@Sallys-Air.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello zhaosally0@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=uiAErxi1bWDseY1yt1tk">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 154ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-11-15 03:35:15 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (0.1ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/sessions/new.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-11-15 03:35:43 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_error_messages.html.erb (0.0ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/registrations/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2023-11-15 03:35:51 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pi+p54FvWzHUQfosE+DPUn1f3pexQB/WjQVFoy6uui0KIjsTmfxgfxyPouLf4kmib6jbjGpsicvQkMe77klxyA==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@gmail.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_error_messages.html.erb (0.1ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (0.0ms)
+  Rendered /Users/swzhao/.rbenv/versions/2.6.8/lib/ruby/gems/2.6.0/gems/devise-4.9.3/app/views/devise/registrations/new.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 265ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2023-11-15 03:35:58 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"94mGQu9pkHGhIv0gVW2gDkPhVkrESHUtUFJ6KjJwz/PDhBS29/qrP2nspe6Zbyb+URZTUR9k4zANx/gy8pcEFg==", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "test@gmail.com"], ["encrypted_password", "$2a$12$HTmrm5GaIYzDUkqy6BDuI.k7hO8DaRuv0xEK0bYsCpeIBktGZ9Cj."], ["created_at", "2023-11-15 08:35:58.380627"], ["updated_at", "2023-11-15 08:35:58.380627"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 261ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2023-11-15 03:35:58 -0500
+
+
+Started GET "/scams" for ::1 at 2023-11-15 03:35:58 -0500
+Processing by ScamsController#index as HTML
+  [1m[35mScam Load (0.1ms)[0m  SELECT "scams".* FROM "scams"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  Rendered scams/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/scams/1" for ::1 at 2023-11-15 03:36:11 -0500
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScam Load (0.3ms)[0m  SELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scams/show.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 19.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scams/1/edit" for ::1 at 2023-11-15 03:36:22 -0500
+Processing by ScamsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+Redirected to http://localhost:3000/scams
+Filter chain halted as :check_owner rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-15 03:36:22 -0500
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scams/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scams/5" for ::1 at 2023-11-15 03:38:48 -0500
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  Rendered scams/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/scams/5" for ::1 at 2023-11-15 03:38:51 -0500
+Processing by ScamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YTr/8y87H7kRE4eP+aWopnWtgrmD10Pe5iiXXzRztRpVN20HN6gk99nd30E1py5WZ1qHolj71cO7vRVH9JR+/w==", "id"=>"5"}
+  [1m[35mScam Load (0.1ms)[0m  SELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+Redirected to http://localhost:3000/scams
+Filter chain halted as :check_owner rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-15 03:38:51 -0500
+Processing by ScamsController#index as HTML
+  [1m[35mScam Load (0.2ms)[0m  SELECT "scams".* FROM "scams"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  Rendered scams/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-15 03:44:07 -0500
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.7ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scams/index.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 67ms (Views: 63.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/scams/new" for ::1 at 2023-11-15 03:44:11 -0500
+Processing by ScamsController#new as HTML
+  Rendered scams/new.html.erb within layouts/application (14.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/scams" for ::1 at 2023-11-15 03:44:18 -0500
+Processing by ScamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MqBPXS8Nu6d0doTvVPgb/C/DoMdgshBGklXI/lRiaNQGrd2pN56A6by43CGY+p0MPTSl3LuehlvPwErmlIWjMQ==", "scam"=>{"title"=>"New Scam Title", "category"=>"phone", "zipcode"=>"42356", "description"=>"afdghd"}, "commit"=>"Save Changes"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "scams" ("title", "category", "zipcode", "description") VALUES (?, ?, ?, ?)[0m  [["title", "New Scam Title"], ["category", "phone"], ["zipcode", "42356"], ["description", "afdghd"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/scams
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-15 03:44:18 -0500
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scams/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scams/6" for ::1 at 2023-11-15 03:44:20 -0500
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mScam Load (0.3ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scams/show.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scams/6/edit" for ::1 at 2023-11-15 03:44:22 -0500
+Processing by ScamsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+Redirected to http://localhost:3000/scams
+Filter chain halted as :check_owner rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-15 03:44:22 -0500
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scams/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scams/6" for ::1 at 2023-11-15 03:45:39 -0500
+Processing by ScamsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mScam Load (0.1ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scams/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/scams/6" for ::1 at 2023-11-15 03:45:40 -0500
+Processing by ScamsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"piSAqAJ9jK6K3F99nWEWhOJ3AXfEPsnlcT+NbCalc6aSKRJcGu634EISB7NRY5B08IAEbB8SX/gsqg905kK4Qw==", "id"=>"6"}
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT  "scams".* FROM "scams" WHERE "scams"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+Redirected to http://localhost:3000/scams
+Filter chain halted as :check_owner rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/scams" for ::1 at 2023-11-15 03:45:40 -0500
+Processing by ScamsController#index as HTML
+  [1m[36mScam Load (0.2ms)[0m  [1mSELECT "scams".* FROM "scams"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scams/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 03:47:18 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.2ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scam_articles/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 35ms (Views: 33.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scam_articles/1" for ::1 at 2023-11-15 03:47:20 -0500
+Processing by ScamArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScamArticle Load (0.2ms)[0m  [1mSELECT  "scam_articles".* FROM "scam_articles" WHERE "scam_articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scam_articles/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 03:47:24 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.2ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scam_articles/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 03:49:32 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.3ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scam_articles/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scam_articles/1" for ::1 at 2023-11-15 03:49:34 -0500
+Processing by ScamArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScamArticle Load (0.1ms)[0m  [1mSELECT  "scam_articles".* FROM "scam_articles" WHERE "scam_articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scam_articles/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 03:49:37 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.2ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scam_articles/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scam_articles/1" for ::1 at 2023-11-15 03:49:39 -0500
+Processing by ScamArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScamArticle Load (0.2ms)[0m  [1mSELECT  "scam_articles".* FROM "scam_articles" WHERE "scam_articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scam_articles/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scam_articles/2" for ::1 at 2023-11-15 03:49:42 -0500
+Processing by ScamArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mScamArticle Load (0.1ms)[0m  [1mSELECT  "scam_articles".* FROM "scam_articles" WHERE "scam_articles"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scam_articles/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_flash.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 03:49:44 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.3ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scam_articles/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scam_articles" for ::1 at 2023-11-15 03:49:57 -0500
+Processing by ScamArticlesController#index as HTML
+  [1m[36mScamArticle Load (0.2ms)[0m  [1mSELECT "scam_articles".* FROM "scam_articles"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered scam_articles/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_flash.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.4ms)

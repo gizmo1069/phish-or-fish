@@ -25,6 +25,8 @@ module NavigationHelpers
       raise "Movie not found" unless movie
       movie_path(movie)
 
+    when /^the scam articles page$/ then '/scam_articles'
+
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

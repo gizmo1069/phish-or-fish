@@ -18,7 +18,7 @@
       <td><%= article.published_at %></td>
       <td><%= article.category %></td>
       <td>
-        <%= link_to 'Read article', article, :class => 'a_customize' %>
+        <%= link_to "Read article '#{article.title}'", article, :class => 'a_customize' %>
       </td>
     </tr>
   <% end %>

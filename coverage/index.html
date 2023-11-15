@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for Phish-or-fish-iter2</title>
+    <title>Code coverage for Phish-or-fish</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.12.3/application.js' type='text/javascript'></script>
     <link href='./assets/0.12.3/application.css' media='screen, projection, print' rel='stylesheet' type='text/css' />
-    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_green.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_red.png" />
     <link rel="icon" type="image/png" href="./assets/0.12.3/favicon.png" />
   </head>
 
@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-10T18:12:09-05:00">2023-11-10T18:12:09-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-15T03:50:53-05:00">2023-11-15T03:50:53-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -22,15 +22,15 @@
   <h2>
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
-      <span class="green">
-  100.0%
+      <span class="red">
+  65.79%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.94
+         1.39
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>6</b> files in total.
+    <b>9</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>35</b> relevant lines,
-    <span class="green"><b>35</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
-    (<span class="green">
-  100.0%
+    <b>76</b> relevant lines,
+    <span class="green"><b>50</b> lines covered</span> and
+    <span class="red"><b>26</b> lines missed. </span>
+    (<span class="red">
+  65.79%
 </span>
 )
   </div>
@@ -71,68 +71,101 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#c78993166cd09871074ef4ef368406656645b258" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+            <td class="strong t-file__name"><a href="#84fc79cb83d339b12414e0771d90f75a0f8c468c" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">6</td>
             <td class="cell--number">2</td>
             <td class="cell--number">2</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#7bb3231f5c2b8314af1c6260e1607d260fbb3cba" class="src_link" title="app/controllers/scams_controller.rb">app/controllers/scams_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">47</td>
-            <td class="cell--number">26</td>
-            <td class="cell--number">26</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">3.27</td>
+            <td class="strong t-file__name"><a href="#be65a6ab2a95d4f5e5e20cd63f9013a2b3b33a58" class="src_link" title="app/controllers/scam_articles_controller.rb">app/controllers/scam_articles_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">45.16 %</td>
+            <td class="cell--number">58</td>
+            <td class="cell--number">31</td>
+            <td class="cell--number">14</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">0.48</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#2dd248ccbec0d4ca53df1d5bfdeb809290156152" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+            <td class="strong t-file__name"><a href="#62ed772de97b5a5a46b491ae24dcb43b8f174d07" class="src_link" title="app/controllers/scams_controller.rb">app/controllers/scams_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">73.53 %</td>
+            <td class="cell--number">60</td>
+            <td class="cell--number">34</td>
+            <td class="cell--number">25</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">2.35</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#7637fff5e0d785666f1af6ff478d19be07aa2d8f" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">2</td>
             <td class="cell--number">1</td>
             <td class="cell--number">1</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#f09e08b553d3f42ccf759c7f414e2dd1eafb0afa" class="src_link" title="app/helpers/scams_helper.rb">app/helpers/scams_helper.rb</a></td>
+            <td class="strong t-file__name"><a href="#45abb6792ccca51ced8a3cfcdfb6c0e3ec753a1a" class="src_link" title="app/helpers/scam_articles_helper.rb">app/helpers/scam_articles_helper.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#d60fc6ae6535aaf096d4cd6f280ac989e3ca4f37" class="src_link" title="app/helpers/scams_helper.rb">app/helpers/scams_helper.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">3</td>
             <td class="cell--number">1</td>
             <td class="cell--number">1</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#c8e3ed581fe7e7b93ce26938a31c89845e9d9819" class="src_link" title="app/models/scam.rb">app/models/scam.rb</a></td>
+            <td class="strong t-file__name"><a href="#e31b7e121a7a5042902bef5cebff468ff0ef76a8" class="src_link" title="app/models/scam.rb">app/models/scam.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">3</td>
             <td class="cell--number">2</td>
             <td class="cell--number">2</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#4cbee17e9540a304e5edd5fb8a65340154492b59" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
+            <td class="strong t-file__name"><a href="#c8182684730b9c02396abc6e063ad1b0858ee20f" class="src_link" title="app/models/scam_article.rb">app/models/scam_article.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#4e5dfd8fed6db7c489f08cb7ffefd9cc80302522" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">8</td>
             <td class="cell--number">3</td>
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -147,15 +180,15 @@
   <h2>
     <span class="group_name">Controllers</span>
     (<span class="covered_percent">
-      <span class="green">
-  100.0%
+      <span class="red">
+  61.19%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.18
+         1.45
        </span>
     </span> hits/line
     )
@@ -164,15 +197,15 @@
   <a name="Controllers"></a>
 
   <div>
-    <b>2</b> files in total.
+    <b>3</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>28</b> relevant lines,
-    <span class="green"><b>28</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
-    (<span class="green">
-  100.0%
+    <b>67</b> relevant lines,
+    <span class="green"><b>41</b> lines covered</span> and
+    <span class="red"><b>26</b> lines missed. </span>
+    (<span class="red">
+  61.19%
 </span>
 )
   </div>
@@ -196,24 +229,35 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#c78993166cd09871074ef4ef368406656645b258" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+            <td class="strong t-file__name"><a href="#84fc79cb83d339b12414e0771d90f75a0f8c468c" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">6</td>
             <td class="cell--number">2</td>
             <td class="cell--number">2</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#7bb3231f5c2b8314af1c6260e1607d260fbb3cba" class="src_link" title="app/controllers/scams_controller.rb">app/controllers/scams_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">47</td>
-            <td class="cell--number">26</td>
-            <td class="cell--number">26</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">3.27</td>
+            <td class="strong t-file__name"><a href="#be65a6ab2a95d4f5e5e20cd63f9013a2b3b33a58" class="src_link" title="app/controllers/scam_articles_controller.rb">app/controllers/scam_articles_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">45.16 %</td>
+            <td class="cell--number">58</td>
+            <td class="cell--number">31</td>
+            <td class="cell--number">14</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">0.48</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#62ed772de97b5a5a46b491ae24dcb43b8f174d07" class="src_link" title="app/controllers/scams_controller.rb">app/controllers/scams_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">73.53 %</td>
+            <td class="cell--number">60</td>
+            <td class="cell--number">34</td>
+            <td class="cell--number">25</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">2.35</td>
             
           </tr>
         
@@ -292,8 +336,8 @@
      </span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         2.0
+       <span class="yellow">
+         1.0
        </span>
     </span> hits/line
     )
@@ -302,12 +346,12 @@
   <a name="Models"></a>
 
   <div>
-    <b>2</b> files in total.
+    <b>3</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>5</b> relevant lines,
-    <span class="green"><b>5</b> lines covered</span> and
+    <b>6</b> relevant lines,
+    <span class="green"><b>6</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -334,24 +378,35 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#c8e3ed581fe7e7b93ce26938a31c89845e9d9819" class="src_link" title="app/models/scam.rb">app/models/scam.rb</a></td>
+            <td class="strong t-file__name"><a href="#e31b7e121a7a5042902bef5cebff468ff0ef76a8" class="src_link" title="app/models/scam.rb">app/models/scam.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">3</td>
             <td class="cell--number">2</td>
             <td class="cell--number">2</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#4cbee17e9540a304e5edd5fb8a65340154492b59" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
+            <td class="strong t-file__name"><a href="#c8182684730b9c02396abc6e063ad1b0858ee20f" class="src_link" title="app/models/scam_article.rb">app/models/scam_article.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#4e5dfd8fed6db7c489f08cb7ffefd9cc80302522" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">8</td>
             <td class="cell--number">3</td>
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -430,8 +485,8 @@
      </span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         2.0
+       <span class="yellow">
+         1.0
        </span>
     </span> hits/line
     )
@@ -440,12 +495,12 @@
   <a name="Helpers"></a>
 
   <div>
-    <b>2</b> files in total.
+    <b>3</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>2</b> relevant lines,
-    <span class="green"><b>2</b> lines covered</span> and
+    <b>3</b> relevant lines,
+    <span class="green"><b>3</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -472,24 +527,35 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#2dd248ccbec0d4ca53df1d5bfdeb809290156152" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+            <td class="strong t-file__name"><a href="#7637fff5e0d785666f1af6ff478d19be07aa2d8f" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">2</td>
             <td class="cell--number">1</td>
             <td class="cell--number">1</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#f09e08b553d3f42ccf759c7f414e2dd1eafb0afa" class="src_link" title="app/helpers/scams_helper.rb">app/helpers/scams_helper.rb</a></td>
+            <td class="strong t-file__name"><a href="#45abb6792ccca51ced8a3cfcdfb6c0e3ec753a1a" class="src_link" title="app/helpers/scam_articles_helper.rb">app/helpers/scam_articles_helper.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#d60fc6ae6535aaf096d4cd6f280ac989e3ca4f37" class="src_link" title="app/helpers/scams_helper.rb">app/helpers/scams_helper.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">3</td>
             <td class="cell--number">1</td>
             <td class="cell--number">1</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.00</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -620,12 +686,12 @@
       <div id="footer">
         Generated by <a href="https://github.com/simplecov-ruby/simplecov">simplecov</a> v0.22.0
         and simplecov-html v0.12.3<br/>
-        using Cucumber Features, RSpec
+        using Cucumber Features
       </div>
 
       <div class="source_files">
       
-        <div class="source_table" id="c78993166cd09871074ef4ef368406656645b258">
+        <div class="source_table" id="84fc79cb83d339b12414e0771d90f75a0f8c468c">
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
     <h4>
@@ -652,8 +718,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
             
@@ -685,8 +751,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="4">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
             
 
             
@@ -722,12 +788,12 @@
 </div>
 
       
-        <div class="source_table" id="7bb3231f5c2b8314af1c6260e1607d260fbb3cba">
+        <div class="source_table" id="be65a6ab2a95d4f5e5e20cd63f9013a2b3b33a58">
   <div class="header">
-    <h3>app/controllers/scams_controller.rb</h3>
+    <h3>app/controllers/scam_articles_controller.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="red">
+  45.16%
 </span>
 
       lines covered
@@ -736,9 +802,9 @@
     
 
     <div class="t-line-summary">
-      <b>26</b> relevant lines.
-      <span class="green"><b>26</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>31</b> relevant lines.
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>17</b> lines missed.</span>
     </div>
 
     
@@ -749,13 +815,13 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">class ScamsController &lt; ApplicationController</code>
+            <code class="ruby">class ScamArticlesController &lt; ApplicationController</code>
           </li>
         </div>
       
@@ -771,46 +837,46 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="3">
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    before_action :check_admin, only: [:new, :create, :edit, :update, :destroy]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def index</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="6">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">  def show</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="5" data-linenumber="4">
-            <span class="hits">5</span>
-            
-
-            
-
-            <code class="ruby">    id = params[:id] # retrieve scam ID from URI route</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="5" data-linenumber="5">
-            <span class="hits">5</span>
-            
-
-            
-
-            <code class="ruby">    @scam = Scam.find(id) # look up scam by unique ID</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="6">
-            
-            
-
-            
-
-            <code class="ruby">    # will render app/views/scams/show.&lt;extension&gt; by default</code>
+            <code class="ruby">      @scam_articles = ScamArticle.all</code>
           </li>
         </div>
       
@@ -821,7 +887,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -832,29 +898,29 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="9">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def index</code>
+            <code class="ruby">    def show</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="16" data-linenumber="10">
-            <span class="hits">16</span>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    @scams = Scam.all</code>
+            <code class="ruby">      @scam_article = ScamArticle.find(params[:id])</code>
           </li>
         </div>
       
@@ -865,7 +931,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -876,29 +942,29 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="13">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def new</code>
+            <code class="ruby">    def new</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
+          <li class="missed" data-hits="0" data-linenumber="14">
             
             
 
             
 
-            <code class="ruby">    # default: render &#39;new&#39; template</code>
+            <code class="ruby">      @scam_article = ScamArticle.new</code>
           </li>
         </div>
       
@@ -909,7 +975,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -920,51 +986,51 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="17">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def create</code>
+            <code class="ruby">    def create</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="18">
-            <span class="hits">4</span>
+          <li class="missed" data-hits="0" data-linenumber="18">
+            
             
 
             
 
-            <code class="ruby">    @scam = Scam.create!(scam_params)</code>
+            <code class="ruby">      @scam_article = ScamArticle.new(scam_article_params)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="19">
-            <span class="hits">4</span>
+          <li class="missed" data-hits="0" data-linenumber="19">
+            
             
 
             
 
-            <code class="ruby">    flash[:notice] = &quot;#{@scam.title} was successfully created.&quot;</code>
+            <code class="ruby">      if @scam_article.save</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="20">
-            <span class="hits">4</span>
+          <li class="missed" data-hits="0" data-linenumber="20">
+            
             
 
             
 
-            <code class="ruby">    redirect_to scams_path</code>
+            <code class="ruby">        redirect_to @scam_article</code>
           </li>
         </div>
       
@@ -975,40 +1041,40 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">      else</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="22">
+          <li class="missed" data-hits="0" data-linenumber="22">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">        render :new</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="23">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="23">
+            
             
 
             
 
-            <code class="ruby">  def edit</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="24">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="24">
+            
             
 
             
 
-            <code class="ruby">    @scam = Scam.find params[:id]</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1019,194 +1085,194 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    def edit</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="27">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="27">
+            
             
 
             
 
-            <code class="ruby">  def update</code>
+            <code class="ruby">      @scam_article = ScamArticle.find(params[:id])</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="28">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="28">
+            
             
 
             
 
-            <code class="ruby">    @scam = Scam.find params[:id]</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="29">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="29">
+            
             
 
             
 
-            <code class="ruby">    @scam.update_attributes!(scam_params)</code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="30">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    flash[:notice] = &quot;#{@scam.title} was successfully updated.&quot;</code>
+            <code class="ruby">    def update</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="31">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="31">
+            
             
 
             
 
-            <code class="ruby">    redirect_to scam_path(@scam)</code>
+            <code class="ruby">      @scam_article = ScamArticle.find(params[:id])</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="32">
+          <li class="missed" data-hits="0" data-linenumber="32">
             
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">      if @scam_article.update(scam_article_params)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="33">
+          <li class="missed" data-hits="0" data-linenumber="33">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">        redirect_to @scam_article</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="34">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="34">
+            
             
 
             
 
-            <code class="ruby">  def destroy</code>
+            <code class="ruby">      else</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="35">
-            <span class="hits">3</span>
+          <li class="missed" data-hits="0" data-linenumber="35">
+            
             
 
             
 
-            <code class="ruby">    @scam = Scam.find(params[:id])</code>
+            <code class="ruby">        render :edit</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="36">
-            <span class="hits">3</span>
+          <li class="never" data-hits="" data-linenumber="36">
+            
             
 
             
 
-            <code class="ruby">    @scam.destroy</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="37">
-            <span class="hits">3</span>
+          <li class="never" data-hits="" data-linenumber="37">
+            
             
 
             
 
-            <code class="ruby">    flash[:notice] = &quot;Scam &#39;#{@scam.title}&#39; deleted.&quot;</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="38">
-            <span class="hits">3</span>
+          <li class="never" data-hits="" data-linenumber="38">
+            
             
 
             
 
-            <code class="ruby">    redirect_to scams_path</code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="39">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">    def destroy</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="40">
+          <li class="missed" data-hits="0" data-linenumber="40">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      @scam_article = ScamArticle.find(params[:id])</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="41">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="41">
+            
             
 
             
 
-            <code class="ruby">  private</code>
+            <code class="ruby">      @scam_article.destroy</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="42">
+          <li class="missed" data-hits="0" data-linenumber="42">
             
             
 
             
 
-            <code class="ruby">  # Making &quot;internal&quot; methods private is not required, but is a common practice.</code>
+            <code class="ruby">      redirect_to scam_articles_path</code>
           </li>
         </div>
       
@@ -1217,29 +1283,29 @@
 
             
 
-            <code class="ruby">  # This helps make clear which methods respond to requests, and which ones do not.</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="44">
-            <span class="hits">2</span>
+          <li class="never" data-hits="" data-linenumber="44">
+            
             
 
             
 
-            <code class="ruby">  def scam_params</code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="45">
-            <span class="hits">6</span>
+          <li class="covered" data-hits="1" data-linenumber="45">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    params.require(:scam).permit(:title, :category, :zipcode, :description)</code>
+            <code class="ruby">    private</code>
           </li>
         </div>
       
@@ -1250,12 +1316,824 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def check_admin</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="48">
+            
+            
+
+            
+
+            <code class="ruby">        unless current_user&amp;.is_admin</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="49">
+            
+            
+
+            
+
+            <code class="ruby">          flash[:warning] = &quot;You are not authorized to perform this action.&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="50">
+            
+            
+
+            
+
+            <code class="ruby">          redirect_to scam_articles_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="51">
+            
+            
+
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="52">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="53">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="54">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def scam_article_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="55">
+            
+            
+
+            
+
+            <code class="ruby">      params.require(:scam_article).permit(:title, :body, :author, :published_at, :category)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="56">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="57">
+            
+            
+
+            
+
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="47">
+          <li class="never" data-hits="" data-linenumber="58">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="62ed772de97b5a5a46b491ae24dcb43b8f174d07">
+  <div class="header">
+    <h3>app/controllers/scams_controller.rb</h3>
+    <h4>
+      <span class="red">
+  73.53%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>34</b> relevant lines.
+      <span class="green"><b>25</b> lines covered</span> and
+      <span class="red"><b>9</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class ScamsController &lt; ApplicationController</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  before_action :set_scam, only: [:edit, :update, :destroy]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  before_action :check_owner, only: [:edit, :update, :destroy]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="7">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    id = params[:id] # retrieve scam ID from URI route</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="8">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @scam = Scam.find(id) # look up scam by unique ID</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">    # will render app/views/scams/show.&lt;extension&gt; by default</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def index</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="24" data-linenumber="13">
+            <span class="hits">24</span>
+            
+
+            
+
+            <code class="ruby">    @scams = Scam.all</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">    # default: render &#39;new&#39; template</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def create</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="21">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    @scam = Scam.create!(scam_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="22">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    flash[:notice] = &quot;#{@scam.title} was successfully created.&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="23">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    redirect_to scams_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def edit</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">    @scam = Scam.find params[:id]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="30">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def update</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">    @scam = Scam.find params[:id]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby">    @scam.update_attributes!(scam_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="33">
+            
+            
+
+            
+
+            <code class="ruby">    flash[:notice] = &quot;#{@scam.title} was successfully updated.&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="34">
+            
+            
+
+            
+
+            <code class="ruby">    redirect_to scam_path(@scam)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="36">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="37">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def destroy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby">    @scam = Scam.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="39">
+            
+            
+
+            
+
+            <code class="ruby">    @scam.destroy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby">    flash[:notice] = &quot;Scam &#39;#{@scam.title}&#39; deleted.&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby">    redirect_to scams_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="42">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="43">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="45">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="46">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def set_scam</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="47">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    @scam = Scam.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="48">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="49">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def check_owner</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="51">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">    unless current_user&amp;.id == @scam.user_id</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="52">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">      flash[:warning] = &quot;You are not authorized to perform this action.&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="53">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">      redirect_to scams_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="54">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="55">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="56">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="57">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def scam_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="58">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    params.require(:scam).permit(:title, :category, :zipcode, :description)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="59">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="60">
             
             
 
@@ -1270,7 +2148,7 @@
 </div>
 
       
-        <div class="source_table" id="2dd248ccbec0d4ca53df1d5bfdeb809290156152">
+        <div class="source_table" id="7637fff5e0d785666f1af6ff478d19be07aa2d8f">
   <div class="header">
     <h3>app/helpers/application_helper.rb</h3>
     <h4>
@@ -1297,8 +2175,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
             
@@ -1323,7 +2201,60 @@
 </div>
 
       
-        <div class="source_table" id="f09e08b553d3f42ccf759c7f414e2dd1eafb0afa">
+        <div class="source_table" id="45abb6792ccca51ced8a3cfcdfb6c0e3ec753a1a">
+  <div class="header">
+    <h3>app/helpers/scam_articles_helper.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>1</b> relevant lines.
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">module ScamArticlesHelper</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="d60fc6ae6535aaf096d4cd6f280ac989e3ca4f37">
   <div class="header">
     <h3>app/helpers/scams_helper.rb</h3>
     <h4>
@@ -1350,8 +2281,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
             
@@ -1387,7 +2318,7 @@
 </div>
 
       
-        <div class="source_table" id="c8e3ed581fe7e7b93ce26938a31c89845e9d9819">
+        <div class="source_table" id="e31b7e121a7a5042902bef5cebff468ff0ef76a8">
   <div class="header">
     <h3>app/models/scam.rb</h3>
     <h4>
@@ -1414,8 +2345,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
             
@@ -1425,8 +2356,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="2">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
             
 
             
@@ -1451,7 +2382,60 @@
 </div>
 
       
-        <div class="source_table" id="4cbee17e9540a304e5edd5fb8a65340154492b59">
+        <div class="source_table" id="c8182684730b9c02396abc6e063ad1b0858ee20f">
+  <div class="header">
+    <h3>app/models/scam_article.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>1</b> relevant lines.
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class ScamArticle &lt; ActiveRecord::Base</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="4e5dfd8fed6db7c489f08cb7ffefd9cc80302522">
   <div class="header">
     <h3>app/models/user.rb</h3>
     <h4>
@@ -1478,8 +2462,8 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="1">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
             
 
             
@@ -1511,8 +2495,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="4">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
             
 
             
@@ -1544,8 +2528,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="7">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
             
 
             

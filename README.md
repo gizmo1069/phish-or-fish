@@ -17,3 +17,6 @@ Set up step:
 5. rake spec
 6. rails server
 7. go to localhost:3000
+
+Note:
+1. "user1@example.com | password1" from seeds.rb is the admin test user and only admins have access to add/edit/delete scam articles.

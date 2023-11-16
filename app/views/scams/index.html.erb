@@ -5,6 +5,20 @@
   <div><%= flash[:alert] %></div>
 <% end %>
 
+<div style="margin-bottom: 24px;">
+<%= form_tag scams_path, method: :get, id: 'categories_form' do %>
+ Include:
+ <% @all_categories.each do |cat| %>
+   <div class="form-check  form-check-inline">
+     <%= label_tag "categories[#{cat}]", cat, class: 'form-check-label' %>
+     <%= check_box_tag "categories[#{cat}]", '1', (@categories_to_show_hash.include?(cat)),
+       class: 'form-check-input' %>
+   </div>
+ <% end %>
+ <%= submit_tag 'Refresh', id: 'categories_submit', class: 'btn btn-primary' %>
+<% end %>
+</div>
+
 <table class="table table-striped col-md-12" id="scams">
   <thead>
     <tr>

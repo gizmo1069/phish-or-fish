@@ -11,7 +11,10 @@ class ScamsController < ApplicationController
   end
 
   def index
-    @scams = Scam.all
+    @all_categories = Scam.all_categories
+    @scams = Scam.with_categories(categories_list)
+    @categories_to_show_hash = categories_hash
+    session['categories'] = categories_list
   end
 
   def new
@@ -53,6 +56,14 @@ class ScamsController < ApplicationController
       flash[:warning] = "You are not authorized to perform this action."
       redirect_to scams_path
     end
+  end
+
+  def categories_list
+    params[:categories]&.keys || session[:categories] || Scam.all_categories
+  end
+
+  def categories_hash
+    Hash[categories_list.collect { |item| [item, "1"] }]
   end
 
   def scam_params

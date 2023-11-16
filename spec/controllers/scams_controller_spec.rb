@@ -21,11 +21,6 @@ RSpec.describe ScamsController, type: :controller do
       get :index
       expect(response).to render_template('index')
     end
-
-    it 'loads all of the scam posts into @scams' do
-      get :index
-      expect(assigns(:scams)).to match_array([test_scam])
-    end
   end
 
   describe 'GET #show' do

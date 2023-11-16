@@ -8,7 +8,7 @@ Background: articles in database
 
   Given the following articles exist:
   | title           | body      | author                    | published_at | category           |
-  | fake Pikachu    | body1     | ditto                     | 10011        |   mobile           |
+  | fake Pikachu    | body1     | ditto                     | 10011        |   phone           |
   | scamarticle     | body2     | FBI                       | 10010        |   email            |
   | porygon z       | body3     | CIA                       | 10045        |                    |  
   | ditto           | body4     | Columbia CS Advisign      | 20920        |  social media      |

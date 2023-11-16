@@ -8,10 +8,13 @@ Background: scams in database
 
   Given the following scams exist:
   | title        | category | zipcode     | description |
-  |fake pikachu    | mobile     | 10011 |   mimikyu |
+  |fake pikachu    | phone     | 10011 |   mimikyu |
   | Wobuffet | email     | 10010 |   fake punching bag |
-  | porygon        | mobile      |   10045 |   epiletic shock |
+  | porygon        | phone      |   10045 |   epiletic shock |
   | ditto     | social media     | 20920 |   it's ditto |
+
+  Given I am on the home page
+  And I check the following categories: phone, email, social media
 
 Scenario: View all scams (not logged in)
   Given I am on the home page

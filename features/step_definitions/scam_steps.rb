@@ -35,3 +35,29 @@ When('I fill in the scam post details') do
   fill_in 'Description', with: 'Description of the scam...'
   fill_in 'Zipcode', with: '10025'
 end
+
+When /I (un)?check the following categories: (.*)/ do |uncheck, category_list|
+  c = category_list.split(', ')
+  c.each do |cat|
+    if uncheck
+        uncheck("categories[#{cat}]")
+    else
+        check("categories[#{cat}]")
+    end
+  end
+end
+
+When /I press the "(.*)" button/ do |button|
+  click_button(button)
+end
+
+Then /I should (not )?see the following scams: (.*)$/ do |no, scam_list|
+  s = scam_list.split(', ')
+  s.each do |scam|
+    if no
+        expect(page).not_to have_content(scam)
+    else
+        expect(page).to have_content(scam)
+    end
+  end
+end

@@ -17,6 +17,7 @@ class ScamArticlesController < ApplicationController
     def create
       @scam_article = ScamArticle.new(scam_article_params)
       if @scam_article.save
+        flash[:notice] = "#{@scam_article.title} was successfully created."
         redirect_to @scam_article
       else
         render :new
@@ -30,6 +31,7 @@ class ScamArticlesController < ApplicationController
     def update
       @scam_article = ScamArticle.find(params[:id])
       if @scam_article.update(scam_article_params)
+        flash[:notice] = "#{@scam_article.title} was successfully updated."
         redirect_to @scam_article
       else
         render :edit

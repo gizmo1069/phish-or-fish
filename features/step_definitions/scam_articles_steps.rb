@@ -10,3 +10,8 @@ Then /I should see all articles/ do
         step %{I should see "#{article.title}"}
     end
 end
+
+When('I fill in the scam article details') do
+    fill_in 'Title', with: 'Social Media Scams'
+    fill_in 'Body', with: 'body of the scam article...'
+end

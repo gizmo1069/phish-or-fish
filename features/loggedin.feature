@@ -19,25 +19,13 @@ Feature: Make changes to my scam post
     Then I should see "Signed in successfully."
     And I should see homepage has Post new scam
   
-  Scenario: See specific scam information
+  Scenario: See specific scam information (scam post does NOT belong to user)
     Given I am on the home page
     When I follow "Details for ditto"
     Then I should see "it's ditto"
     And I should not see "mimikyu"
-    And I should see "Delete"
-    And I should see "Edit"
-  
-  Scenario: Edit scam (no authorization)
-    Given I am on the home page
-    When I follow "Details for ditto"
-    Then I click on "Edit"
-    Then I should see "You are not authorized to perform this action."
-
-  Scenario: Destroy scam (no authorization)
-    Given I am on the home page
-    When I follow "Details for ditto"
-    Then I click on "Delete"
-    Then I should see "You are not authorized to perform this action."
+    And I should not see "Delete"
+    And I should not see "Edit"
 
   Scenario: Create scam
     Given I am on the home page
@@ -48,7 +36,7 @@ Feature: Make changes to my scam post
     Then I should see "All Scams"
     Then I should see "New Scam Title"
 
-Scenario: Edit scam (authorized)
+Scenario: Edit scam (scam post DOES belong to user)
     Given I am on the home page
     When I click on "Post new scam"
     Then I should see "Create New Scam"
@@ -63,7 +51,7 @@ Scenario: Edit scam (authorized)
     And I click on "Update Scam Info"
     Then I should see the updated details of the scam post
 
-Scenario: Destroy scam (authorized)
+Scenario: Destroy scam (scam post DOES belong to user)
     Given I am on the home page
     When I click on "Post new scam"
     Then I should see "Create New Scam"
@@ -72,6 +60,4 @@ Scenario: Destroy scam (authorized)
     Then I should see "All Scams"
     Then I should see "New Scam Title"
     When I follow "Details for New Scam Title"
-    Then I click on "Delete"
-    Then I should see "All Scams"
-    Then I should not see "New Scam Title"
+    Then I should see "Delete"

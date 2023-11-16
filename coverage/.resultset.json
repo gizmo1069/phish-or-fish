@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/swzhao/Documents/Github/phish-or-fish/app/models/user.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -13,14 +13,17 @@
           null
         ]
       },
-      "/Users/swzhao/Documents/Github/phish-or-fish/app/models/scam.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/models/scam.rb": {
         "lines": [
+          1,
+          1,
+          null,
           1,
           1,
           null
         ]
       },
-      "/Users/swzhao/Documents/Github/phish-or-fish/app/controllers/application_controller.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
@@ -30,40 +33,41 @@
           null
         ]
       },
-      "/Users/swzhao/Documents/Github/phish-or-fish/app/helpers/application_helper.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/swzhao/Documents/Github/phish-or-fish/app/helpers/scam_articles_helper.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/helpers/scam_articles_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/swzhao/Documents/Github/phish-or-fish/app/helpers/scams_helper.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/helpers/scams_helper.rb": {
         "lines": [
           1,
           null,
           null
         ]
       },
-      "/Users/swzhao/Documents/Github/phish-or-fish/app/controllers/scams_controller.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/controllers/scams_controller.rb": {
         "lines": [
           1,
           1,
           1,
+          1,
           null,
           null,
           1,
-          7,
-          7,
+          6,
+          6,
           null,
           null,
           null,
           1,
-          24,
+          19,
           null,
           null,
           1,
@@ -77,7 +81,14 @@
           null,
           null,
           1,
-          0,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           1,
@@ -86,42 +97,6 @@
           0,
           0,
           null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          1,
-          null,
-          1,
-          4,
-          null,
-          null,
-          1,
-          4,
-          4,
-          4,
-          null,
-          null,
-          null,
-          1,
-          3,
-          null,
-          null
-        ]
-      },
-      "/Users/swzhao/Documents/Github/phish-or-fish/app/models/scam_article.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/swzhao/Documents/Github/phish-or-fish/app/controllers/scam_articles_controller.rb": {
-        "lines": [
-          1,
           null,
           1,
           null,
@@ -130,63 +105,96 @@
           null,
           null,
           1,
-          1,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          null,
-          null,
-          1,
-          null,
-          1,
-          0,
+          2,
           0,
           0,
           null,
           null,
           null,
           1,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/models/scam_article.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/controllers/scam_articles_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          6,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          4,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          2,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1700038253
+    "timestamp": 1700083832
   },
   "RSpec": {
     "coverage": {
-      "/Users/asmisriwastawa/phish-or-fish-iter2/app/models/user.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -198,45 +206,129 @@
           null
         ]
       },
-      "/Users/asmisriwastawa/phish-or-fish-iter2/app/helpers/application_helper.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/asmisriwastawa/phish-or-fish-iter2/app/helpers/scams_helper.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/helpers/scam_articles_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/helpers/scams_helper.rb": {
         "lines": [
           1,
           null,
           null
         ]
       },
-      "/Users/asmisriwastawa/phish-or-fish-iter2/app/controllers/scams_controller.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/controllers/scam_articles_controller.rb": {
         "lines": [
           1,
           null,
           1,
-          0,
-          0,
           null,
+          1,
+          3,
           null,
           null,
           1,
-          0,
-          null,
-          null,
-          1,
-          null,
+          3,
           null,
           null,
           1,
           2,
+          null,
+          null,
+          1,
+          4,
+          4,
+          2,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          4,
+          4,
+          2,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null,
+          1,
+          2,
           2,
           2,
           null,
           null,
           1,
-          0,
+          null,
+          1,
+          15,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          8,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/controllers/scams_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
           null,
           null,
           1,
@@ -254,6 +346,16 @@
           null,
           null,
           1,
+          null,
+          1,
+          7,
+          null,
+          null,
+          1,
+          7,
+          1,
+          1,
+          null,
           null,
           null,
           1,
@@ -262,24 +364,25 @@
           null
         ]
       },
-      "/Users/asmisriwastawa/phish-or-fish-iter2/app/controllers/application_controller.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/models/scam_article.rb": {
         "lines": [
           1,
-          null,
-          null,
           1,
-          null,
+          1,
           null
         ]
       },
-      "/Users/asmisriwastawa/phish-or-fish-iter2/app/models/scam.rb": {
+      "/Users/lizhuoxuan/2023_fall/4152/phishorfish/app/models/scam.rb": {
         "lines": [
+          1,
+          1,
+          null,
           1,
           1,
           null
         ]
       }
     },
-    "timestamp": 1699657419
+    "timestamp": 1700096732
   }
 }

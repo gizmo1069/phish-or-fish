@@ -32,15 +32,29 @@ end
 # Create scam articles
 ScamArticle.create!(
   title: "Phone Scams",
-  body: "These scams typically involve the scammer calling you and pretending to be from a legitimate company or organization, such as a bank, government agency, or utility company. They may say that there is a problem with your account and that you need to provide them with your personal information or credit card number to fix it. Embassy/citizenship scams: The scammer will call you and claim to be from your Embassy or US Homeland Security. They may say your personal information is being used to commit crimes and there is a warrant in your name. You will be asked to open a video app and remain monitored on video to prove your innocence. You may also be asked to pay large sums of money for a “bail bond” with the promise it will be returned later. In these cases, you will be asked to send more and more money until you realize it’s a scam and communication is ended. Tech support / financial institute scams: The scammer will call you and claim to be from a company. They will say that there is a problem with your computer or account and that you need to give them remote access to fix it. Once they have remote access, they can steal your personal information or install malware on your computer to learn passwords. IRS scams: The scammer will call you and claim to be from the IRS. They will say that you owe money in taxes and that you need to pay immediately. They may also threaten to arrest you if you don't pay.",
-  author: "Sam",
+  body: "<p>These scams typically involve the scammer calling you and pretending to be from a legitimate company or organization, such as a bank, government agency, or utility company. They may say that there is a problem with your account and that you need to provide them with your personal information or credit card number to fix it.&nbsp;</p>
+  <ul>
+  <li><strong>Embassy/citizenship scams:&nbsp;</strong>The scammer will call you and claim to be from your Embassy or US Homeland Security. They may say your personal information is being used to commit crimes and there is a warrant in your name. You will be asked to open a video app and remain monitored on video to prove your innocence. You may also be asked to pay large sums of money for a &ldquo;bail bond&rdquo; with the promise it will be returned later. In these cases, you will be asked to send more and more money until you realize it&rsquo;s a scam and communication is ended. <br />&nbsp;</li>
+  <li><strong>Tech support / financial institute scams:&nbsp;</strong>The scammer will call you and claim to be from a company. They will say that there is a problem with your computer or account and that you need to give them remote access to fix it. Once they have remote access, they can steal your personal information or install malware on your computer to learn passwords. <br />&nbsp;</li>
+  <li><strong>IRS scams:</strong>&nbsp;The scammer will call you and claim to be from the IRS. They will say that you owe money in taxes and that you need to pay immediately. They may also threaten to arrest you if you don't pay.</li>
+  </ul>
+  <p>Learn more:&nbsp;<a href='https://consumer.ftc.gov/articles/phone-scam' target='_blank' rel='noopener'>https://consumer.ftc.gov/articles/phone-scams</a>&nbsp;</p>",
+  author: "Columbia CS Advising",
   published_at: "2023-11-14"
 )
 
 ScamArticle.create!(
   title: "How to Avoid and Recognize Scams",
-  body: "Scammers use email or text messages to trick you into giving them your personal and financial information. But there are several ways to protect yourself.",
-  author: "Federal Trade Commission",
+  body: "<ul>
+  <li>Never give out your personal information over the phone or email, unless you are sure of the identity of the person you are talking to.&nbsp;</li>
+  <li>Be suspicious of any email or phone call that asks for your personal information or credit card number.&nbsp;</li>
+  <li>Do not click on links in emails or text messages from people you don't know.&nbsp;</li>
+  <li>Be careful about what information you share on social media.&nbsp;</li>
+  <li>Keep your software up to date.&nbsp;</li>
+  <li>Use strong passwords and change them regularly.&nbsp;</li>
+  <li>If you think you have been scammed, you should report it to the authorities and to the company or organization that was impersonated. You should also keep a record of all the information you have about the scam, including the phone number, email address, and website address.&nbsp;</li>
+  </ul>",
+  author: "Columbia Public Safety",
   published_at: "2023-11-14"
 )
 

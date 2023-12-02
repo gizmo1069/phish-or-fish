@@ -16,12 +16,18 @@
         <h1 class="title">Phish Or Fish</h1>
         <%= link_to 'Ongoing Scams', scams_path, class: 'nav_link'  %>
         <%= link_to 'Common Scams', scam_articles_path, class: 'nav_link' %>
+        <% if current_user %>
+          <%= link_to 'My Posts', my_posts_path, class: 'nav_link' %>
+        <% end %>
       </div>
+      <div>
       <% if current_user %>
+        <span style="font-size: 18px">Hi, <%= current_user.email %></span>
         <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'nav_link' %>
       <% else %>
         <%= link_to 'Login', new_user_session_path, class: 'nav_link' %>
       <% end %>
+      </div>
       
     </nav>
     <div class="container">

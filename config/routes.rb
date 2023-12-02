@@ -7,5 +7,6 @@ Phishorfish::Application.routes.draw do
   # map '/' to be a redirect to '/scams'
   root :to => redirect('/scams')
 
+  get '/my_posts', to: 'scams#my_posts', as: 'my_posts'
 
 end

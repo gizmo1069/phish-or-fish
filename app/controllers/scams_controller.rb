@@ -21,6 +21,11 @@ class ScamsController < ApplicationController
     # default: render 'new' template
   end
 
+  def my_posts
+    @user = current_user
+    @my_posts = Scam.where(user_id: @user.id)
+  end
+
   def create
     @scam = Scam.create!(scam_params.merge(user_id: current_user.id))
     flash[:notice] = "#{@scam.title} was successfully created."

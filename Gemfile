@@ -15,6 +15,7 @@ group :development, :test do
   gem 'omniauth'
   gem 'omniauth-google-oauth2'
   gem 'devise'
+  gem 'fog-aws'
 end
 
 group :test do
@@ -24,6 +25,7 @@ group :test do
 end
 group :production do
   gem 'pg'
+  gem 'fog-aws'
 end
 
 # Gems used only for assets and not required

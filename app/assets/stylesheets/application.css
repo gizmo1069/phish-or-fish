@@ -74,6 +74,15 @@ h3 {
   border-color: transparent;
 }
 
+.btn-upload {
+  background-color: #45ad6b;
+  border-color: transparent;
+  padding: 8px;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 .article {
   font-family: "proxima-nova",sans-serif;
   font-size: 20px;

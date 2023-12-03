@@ -1,6 +1,6 @@
 <h2>Create New Scam</h2>
 
-<%= form_tag scams_path, :class => 'form' do %>
+<%= form_tag scams_path, :class => 'form', multipart: true do %>
   <%= label :scam, :title, 'Title', :class => 'col-form-label' %>
   <%= text_field :scam, :title, :class => 'form-control', required: true %>
   <%= label :scam, :category, 'Category', :class => 'col-form-label'  %>
@@ -9,9 +9,44 @@
   <%= text_field :scam, :zipcode, :class => 'form-control col-2' %>
   <%= label :scam, :description, 'Description', :class => 'col-form-label'  %>
   <%= text_area :scam, :description, :class => 'form-control', required: true %>
+  <%= label :scam, :url, 'Proof Image Upload', :class => 'col-form-label'  %>
+  <div style="margin-top: 8px">
+  <input type="file" id="fileInput">
+  <span id="uploadButton" class="btn-upload">Upload</span>
+  <%= hidden_field :scam, :url %>
+  </div>
+  <img src="" style="max-width: 40%; margin: 16px 0" id="fileimg" />
   <br/>
   <div class='mg_16'>
     <%= submit_tag 'Save Changes', :class => 'btn btn-primary' %>
     <%= link_to 'Cancel', scams_path, :class => 'btn btn-secondary' %>
   </div>
 <% end %>
+
+<script>
+  document.getElementById('uploadButton').addEventListener('click', function() {
+    var fileInput = document.getElementById('fileInput');
+    var file = fileInput.files[0];
+    uploadFile(file);
+
+  });
+
+  function uploadFile(file) {
+    var params = {
+        Bucket: 'phishorfish',
+        Key: 'uploads/' + Date.now(),
+        Body: file,
+        ACL: 'public-read' // or another ACL as per your requirements
+    };
+
+    s3.upload(params, function (err, data) {
+        if (err) {
+            console.log('Error', err);
+        } else {
+            document.getElementById('scam_url').value = data.Location;
+            document.getElementById('fileimg').src = data.Location;
+            alert("Proof upload success!");
+        }
+    });
+  }
+</script>

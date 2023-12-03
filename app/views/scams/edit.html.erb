@@ -13,7 +13,44 @@
   <%= f.label :description, 'Description', class: 'col-form-label' %>
   <%= f.text_area :description, class: 'form-control', required: true %>
 
+  <%= f.label :url, 'Proof Image Upload', :class => 'col-form-label'  %>
+  <div style="margin-top: 8px">
+  <input type="file" id="fileInput">
+  <span id="uploadButton" class="btn-upload">Upload</span>
+  <%= f.hidden_field :url %>
+  </div>
+  <img src="<%= @scam.url %>" style="max-width: 40%; margin: 16px 0" id="fileimg" />
+
+
   <br/>
   <%= f.submit 'Update Scam Info', class: 'btn btn-primary' %>
   <%= link_to 'Cancel', scams_path, class: 'btn btn-secondary' %>
 <% end %>
+
+<script>
+  document.getElementById('uploadButton').addEventListener('click', function() {
+    var fileInput = document.getElementById('fileInput');
+    var file = fileInput.files[0];
+    uploadFile(file);
+
+  });
+
+  function uploadFile(file) {
+    var params = {
+        Bucket: 'phishorfish',
+        Key: 'uploads/' + Date.now(),
+        Body: file,
+        ACL: 'public-read' // or another ACL as per your requirements
+    };
+
+    s3.upload(params, function (err, data) {
+        if (err) {
+            console.log('Error', err);
+        } else {
+            document.getElementById('scam_url').value = data.Location;
+            document.getElementById('fileimg').src = data.Location;
+            alert("Proof upload success!");
+        }
+    });
+  }
+</script>

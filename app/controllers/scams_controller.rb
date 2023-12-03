@@ -72,6 +72,6 @@ class ScamsController < ApplicationController
   end
 
   def scam_params
-    params.require(:scam).permit(:title, :category, :zipcode, :description)
+    params.require(:scam).permit(:title, :category, :zipcode, :description, :url)
   end
 end

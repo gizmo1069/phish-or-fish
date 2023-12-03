@@ -35,7 +35,7 @@
   <%= @scam.description %>
 </p>
 
-<img src="<%= @scam.url %>"/>
+<img src="<%= @scam.url %>" style="max-width: 80%; min-width: 60%" />
 
 <div>
   <% if current_user && current_user.id == @scam.user_id %>

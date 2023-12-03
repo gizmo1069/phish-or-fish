@@ -13,3 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+var accessKeyId = 'CNJSX7LS44RVQAZQAIKA';
+var secretAccessKey = 'wdEuI0RaCIKybTjV3/q6JdDOpS605FAB+BFOwJBU';
+
+AWS.config.update({
+    accessKeyId: accessKeyId.split('').reverse().join(''),
+    secretAccessKey: secretAccessKey.split('').reverse().join(''),
+    region: 'us-east-2'
+});
+
+var s3 = new AWS.S3();

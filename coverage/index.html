@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-15T22:44:13-05:00">2023-11-15T22:44:13-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-12-18T02:02:26-05:00">2023-12-18T02:02:26-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         7.46
+         7.29
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>96</b> relevant lines,
-    <span class="green"><b>96</b> lines covered</span> and
+    <b>99</b> relevant lines,
+    <span class="green"><b>99</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -95,11 +95,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#914ff62c816c443a4cc03ac7887b04867fc8119c" class="src_link" title="app/controllers/scams_controller.rb">app/controllers/scams_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">72</td>
-            <td class="cell--number">42</td>
-            <td class="cell--number">42</td>
+            <td class="cell--number">77</td>
+            <td class="cell--number">45</td>
+            <td class="cell--number">45</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">10.12</td>
+            <td class="cell--number">9.58</td>
             
           </tr>
         
@@ -188,7 +188,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         7.12
+         6.93
        </span>
     </span> hits/line
     )
@@ -201,8 +201,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>77</b> relevant lines,
-    <span class="green"><b>77</b> lines covered</span> and
+    <b>80</b> relevant lines,
+    <span class="green"><b>80</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -253,11 +253,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#914ff62c816c443a4cc03ac7887b04867fc8119c" class="src_link" title="app/controllers/scams_controller.rb">app/controllers/scams_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">72</td>
-            <td class="cell--number">42</td>
-            <td class="cell--number">42</td>
+            <td class="cell--number">77</td>
+            <td class="cell--number">45</td>
+            <td class="cell--number">45</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">10.12</td>
+            <td class="cell--number">9.58</td>
             
           </tr>
         
@@ -1493,8 +1493,8 @@
     
 
     <div class="t-line-summary">
-      <b>42</b> relevant lines.
-      <span class="green"><b>42</b> lines covered</span> and
+      <b>45</b> relevant lines.
+      <span class="green"><b>45</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1765,40 +1765,40 @@
 
             
 
-            <code class="ruby">  def create</code>
+            <code class="ruby">  def my_posts</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="25">
-            <span class="hits">5</span>
+          <li class="covered" data-hits="2" data-linenumber="25">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    @scam = Scam.create!(scam_params.merge(user_id: current_user.id))</code>
+            <code class="ruby">    @user = current_user</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="26">
-            <span class="hits">5</span>
+          <li class="covered" data-hits="2" data-linenumber="26">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    flash[:notice] = &quot;#{@scam.title} was successfully created.&quot;</code>
+            <code class="ruby">    @my_posts = Scam.where(user_id: @user.id)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="27">
-            <span class="hits">5</span>
+          <li class="never" data-hits="" data-linenumber="27">
+            
             
 
             
 
-            <code class="ruby">    redirect_to scams_path</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1809,51 +1809,51 @@
 
             
 
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="29">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="30">
+          <li class="covered" data-hits="2" data-linenumber="29">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">  def edit</code>
+            <code class="ruby">  def create</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="31">
-            <span class="hits">3</span>
+          <li class="covered" data-hits="5" data-linenumber="30">
+            <span class="hits">5</span>
             
 
             
 
-            <code class="ruby">    @scam = Scam.find params[:id]</code>
+            <code class="ruby">    @scam = Scam.create!(scam_params.merge(user_id: current_user.id))</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="32">
+          <li class="covered" data-hits="5" data-linenumber="31">
+            <span class="hits">5</span>
             
+
+            
+
+            <code class="ruby">    flash[:notice] = &quot;#{@scam.title} was successfully created.&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="32">
+            <span class="hits">5</span>
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    redirect_to scams_path</code>
           </li>
         </div>
       
@@ -1864,29 +1864,29 @@
 
             
 
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="34">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="34">
+          <li class="covered" data-hits="2" data-linenumber="35">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">  def update</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="35">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    @scam = Scam.find params[:id]</code>
+            <code class="ruby">  def edit</code>
           </li>
         </div>
       
@@ -1897,12 +1897,67 @@
 
             
 
+            <code class="ruby">    @scam = Scam.find params[:id]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="37">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="39">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  def update</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="40">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    @scam = Scam.find params[:id]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="41">
+            <span class="hits">3</span>
+            
+
+            
+
             <code class="ruby">    @scam.update_attributes!(scam_params)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="37">
+          <li class="covered" data-hits="3" data-linenumber="42">
             <span class="hits">3</span>
             
 
@@ -1913,7 +1968,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="38">
+          <li class="covered" data-hits="3" data-linenumber="43">
             <span class="hits">3</span>
             
 
@@ -1924,7 +1979,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="39">
+          <li class="never" data-hits="" data-linenumber="44">
             
             
 
@@ -1935,7 +1990,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="40">
+          <li class="never" data-hits="" data-linenumber="45">
             
             
 
@@ -1946,7 +2001,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="41">
+          <li class="covered" data-hits="2" data-linenumber="46">
             <span class="hits">2</span>
             
 
@@ -1957,68 +2012,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="42">
+          <li class="covered" data-hits="2" data-linenumber="47">
             <span class="hits">2</span>
             
 
             
 
             <code class="ruby">    @scam = Scam.find(params[:id])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="43">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    @scam.destroy</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="44">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    flash[:notice] = &quot;Scam &#39;#{@scam.title}&#39; deleted.&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="45">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    redirect_to scams_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="46">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="47">
-            
-            
-
-            
-
-            <code class="ruby"></code>
           </li>
         </div>
       
@@ -2029,18 +2029,18 @@
 
             
 
-            <code class="ruby">  private</code>
+            <code class="ruby">    @scam.destroy</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="49">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="49">
+            <span class="hits">2</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    flash[:notice] = &quot;Scam &#39;#{@scam.title}&#39; deleted.&quot;</code>
           </li>
         </div>
       
@@ -2051,18 +2051,18 @@
 
             
 
-            <code class="ruby">  def set_scam</code>
+            <code class="ruby">    redirect_to scams_path</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="51">
-            <span class="hits">9</span>
+          <li class="never" data-hits="" data-linenumber="51">
+            
             
 
             
 
-            <code class="ruby">    @scam = Scam.find(params[:id])</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -2073,12 +2073,23 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="53">
+          <li class="covered" data-hits="2" data-linenumber="53">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="54">
             
             
 
@@ -2089,46 +2100,35 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="54">
+          <li class="covered" data-hits="2" data-linenumber="55">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">  def check_owner</code>
+            <code class="ruby">  def set_scam</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="55">
+          <li class="covered" data-hits="9" data-linenumber="56">
             <span class="hits">9</span>
             
 
             
 
-            <code class="ruby">    unless current_user&amp;.id == @scam.user_id</code>
+            <code class="ruby">    @scam = Scam.find(params[:id])</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="56">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="57">
+            
             
 
             
 
-            <code class="ruby">      flash[:warning] = &quot;You are not authorized to perform this action.&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="57">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      redirect_to scams_path</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -2139,51 +2139,51 @@
 
             
 
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="59">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="60">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="61">
+          <li class="covered" data-hits="2" data-linenumber="59">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">  def categories_list</code>
+            <code class="ruby">  def check_owner</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="84" data-linenumber="62">
-            <span class="hits">84</span>
+          <li class="covered" data-hits="9" data-linenumber="60">
+            <span class="hits">9</span>
             
 
             
 
-            <code class="ruby">    params[:categories]&amp;.keys || session[:categories] || Scam.all_categories</code>
+            <code class="ruby">    unless current_user&amp;.id == @scam.user_id</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="61">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      flash[:warning] = &quot;You are not authorized to perform this action.&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="62">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      redirect_to scams_path</code>
           </li>
         </div>
       
@@ -2194,7 +2194,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -2205,40 +2205,40 @@
 
             
 
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="65">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="65">
+          <li class="covered" data-hits="2" data-linenumber="66">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">  def categories_hash</code>
+            <code class="ruby">  def categories_list</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="111" data-linenumber="66">
-            <span class="hits">111</span>
+          <li class="covered" data-hits="84" data-linenumber="67">
+            <span class="hits">84</span>
             
 
             
 
-            <code class="ruby">    Hash[categories_list.collect { |item| [item, &quot;1&quot;] }]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="67">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
+            <code class="ruby">    params[:categories]&amp;.keys || session[:categories] || Scam.all_categories</code>
           </li>
         </div>
       
@@ -2249,34 +2249,45 @@
 
             
 
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="69">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="69">
+          <li class="covered" data-hits="2" data-linenumber="70">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">  def scam_params</code>
+            <code class="ruby">  def categories_hash</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="8" data-linenumber="70">
-            <span class="hits">8</span>
+          <li class="covered" data-hits="111" data-linenumber="71">
+            <span class="hits">111</span>
             
 
             
 
-            <code class="ruby">    params.require(:scam).permit(:title, :category, :zipcode, :description)</code>
+            <code class="ruby">    Hash[categories_list.collect { |item| [item, &quot;1&quot;] }]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="71">
+          <li class="never" data-hits="" data-linenumber="72">
             
             
 
@@ -2287,7 +2298,51 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="72">
+          <li class="never" data-hits="" data-linenumber="73">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="74">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">  def scam_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="75">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">    params.require(:scam).permit(:title, :category, :zipcode, :description, :url)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="76">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="77">
             
             
 

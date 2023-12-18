@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe ScamsController, type: :controller do
 
   let(:user) { User.create!(email: 'user@example.com', password: 'password', is_admin: false) }
-  let(:test_scam) { Scam.create!(title: 'Test title', description: 'Test description') }
+  let(:test_scam) { Scam.create!(title: 'Test title', description: 'Test description', user_id: user.id) }
 
   before do
     @request.env["devise.mapping"] = Devise.mappings[:user]
@@ -38,6 +38,19 @@ RSpec.describe ScamsController, type: :controller do
     it 'loads the scam post into @scam' do
       get :show, id: test_scam.id
       expect(assigns(:scam)).to eq(test_scam)
+    end
+  end
+
+  describe 'GET #my_posts' do
+    it "loads the user's scam post into @my_posts" do
+      get :my_posts
+      expect(assigns(:my_posts)).to include(test_scam)
+    end
+
+    it "does not load other users' posts into @my_posts" do
+      not_my_scam = Scam.create!(title: "Test Title", category: "social media", zipcode: "12345", description: "Test Description", user_id: 999)
+      get :my_posts
+      expect(assigns(:my_posts)).not_to include(not_my_scam)
     end
   end
 
